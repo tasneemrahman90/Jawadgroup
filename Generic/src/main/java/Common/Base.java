@@ -68,7 +68,7 @@ public class Base {
             if(os.equalsIgnoreCase("windows")){
                 System.setProperty("webdriver.chrome.driver","Generic\\selenium-browser-driver\\chromedriver.exe");
             }else{
-                System.setProperty("webdriver.chrome.driver", "/Users/PlayBoy/IdeaProjects/TeamCFramework/Generic/selenium-browser-driver/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "../Generic/selenium-browser-driver/chromedriver");
             }
             driver = new ChromeDriver();
         }else if(browserName.equalsIgnoreCase("safari")){

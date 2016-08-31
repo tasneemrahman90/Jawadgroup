@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/BBB/BBB.iml" filepath="$PROJECT_DIR$/BBB/BBB.iml" />
       <module fileurl="file://$PROJECT_DIR$/Castle/Castle.iml" filepath="$PROJECT_DIR$/Castle/Castle.iml" />
       <module fileurl="file://$PROJECT_DIR$/Generic/Generic.iml" filepath="$PROJECT_DIR$/Generic/Generic.iml" />
       <module fileurl="file://$PROJECT_DIR$/TeamCFramework.iml" filepath="$PROJECT_DIR$/TeamCFramework.iml" />

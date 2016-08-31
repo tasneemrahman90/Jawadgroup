@@ -22,11 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="BBB" />
         <module name="Castle" />
         <module name="Generic" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="BBB" target="1.5" />
       <module name="Castle" target="1.5" />
       <module name="Generic" target="1.5" />
       <module name="TeamCFramework" target="1.5" />

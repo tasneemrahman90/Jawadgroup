@@ -11,6 +11,7 @@
     <modules>
         <module>Generic</module>
         <module>Castle</module>
+        <module>BBB</module>
         <!--<module>Amazon</module>-->
         <!--<module>Cnn</module>-->
         <!--<module>NYTimes</module>-->

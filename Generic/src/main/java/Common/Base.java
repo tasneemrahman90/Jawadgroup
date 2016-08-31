@@ -58,15 +58,14 @@ public class Base {
     public WebDriver getLocalDriver(String os, String browserName){
 
         if(browserName.equalsIgnoreCase("firefox")){
-            //FirefoxProfile fp=new FirefoxProfile();
-            //fp.setEnableNativeEvents(true);
+
             driver = new FirefoxDriver();
 
-            // driver = new FirefoxDriver();
+
 
         }else if(browserName.equalsIgnoreCase("chrome")){
             if(os.equalsIgnoreCase("windows")){
-                System.setProperty("webdriver.chrome.driver","Generic\\selenium-browser-driver\\chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver","..\\Generic\\selenium-browser-driver\\chromedriver.exe");
             }else{
                 System.setProperty("webdriver.chrome.driver", "../Generic/selenium-browser-driver/chromedriver");
             }
@@ -74,7 +73,7 @@ public class Base {
         }else if(browserName.equalsIgnoreCase("safari")){
             driver = new SafariDriver();
         }else if(browserName.equalsIgnoreCase("ie")){
-            System.setProperty("webdriver.ie.driver","Generic\\selenium-browser-driver\\IEDriverServer.exe");
+            System.setProperty("webdriver.ie.driver","..\\Generic\\selenium-browser-driver\\IEDriverServer.exe");
             driver = new InternetExplorerDriver();
         }else if(browserName.equalsIgnoreCase("htmlunit")){
             driver = new HtmlUnitDriver();

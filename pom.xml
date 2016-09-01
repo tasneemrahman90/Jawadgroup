@@ -125,7 +125,7 @@
             <id>Castle-app</id>
             <modules>
                 <module>Generic</module>
-                <module>Castle</module></module>
+                <module>Castle</module>
             </modules>
         </profile>
         <profile>

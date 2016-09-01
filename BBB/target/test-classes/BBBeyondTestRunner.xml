@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+
+<suite name="Bed Bath And Beyond " parallel="tests">
+
+    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="userName" value="Dimitar"/>
+    <parameter name="key" value="6f132866-de72-43fd-b49a-e6f81d26bfe3"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="browser" value="chrome"/>
+    <parameter name="browserVersion" value="47.0.1"/>
+    <parameter name="url" value="http://www.bedbathandbeyond.com"/>
+<!--firefox -48-->
+    <test name = "Bed Bath And Beyond Search">
+        <classes>
+            <class name="search.SearchContent"/>
+        </classes>
+    </test>
+
+    <test name = "Bed Bath And Beyond Gift Card Search">
+        <classes>
+            <class name="giftCardsearch.GiftCard"/>
+        </classes>
+    </test>
+
+    <test name = "BBB Gift Card Add To Card">
+        <classes>
+            <class name="addToCart.giftCardAddToCart"/>
+        </classes>
+    </test>
+
+    <test name = "Find Store">
+        <classes>
+            <class name="findAStore.FindStore"/>
+        </classes>
+    </test>
+
+    <test name = "Offers">
+        <classes>
+            <class name="SignUpForOffers.Offers"/>
+        </classes>
+    </test>
+
+    <test name = "Dropdown Menu">
+        <classes>
+            <class name="DropdownBoxElements.Dropdown"/>
+        </classes>
+    </test>
+
+    <test name = "Sign Up E-Mail">
+        <classes>
+            <class name="SignUpForOffers.E_Mail"/>
+        </classes>
+    </test>
+    <test name = "Sign Up Mail">
+        <classes>
+            <class name="SignUpForOffers.Mail"/>
+        </classes>
+    </test>
+    <test name = "Sign Up Mobile">
+        <classes>
+            <class name="SignUpForOffers.Mobile"/>
+        </classes>
+    </test>
+
+    <test name = "Products Menu">
+        <classes>
+            <class name="productsMenu.Products"/>
+        </classes>
+    </test>
+    <test name = "In Products Menu">
+        <classes>
+            <class name="productsMenu.InProducts"/>
+        </classes>
+    </test>
+    <test name = "In Products Get TXT">
+        <classes>
+            <class name="productsMenu.InProductsTxt"/>
+        </classes>
+    </test>
+</suite>

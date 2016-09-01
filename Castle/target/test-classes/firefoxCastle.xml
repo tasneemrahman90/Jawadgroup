@@ -14,7 +14,9 @@
     <test name = "Castle Search">
         <classes>
 
-            <class name="Search"/>
+            <!--<class name="Search"/>-->
+            <class name="SearchBestBuy"/>
+
         </classes>
     </test>
 

@@ -12,6 +12,7 @@
         <classes>
 
             <class name="Search"/>
+            <class name="SearchBestBuy"/>
         </classes>
     </test>
 

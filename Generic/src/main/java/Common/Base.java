@@ -110,7 +110,7 @@ public class Base {
     }
     @AfterMethod
     public void cleanUp(){
-        driver.quit();
+        driver.close();
     }
 
     public void clickByCss(String locator) {

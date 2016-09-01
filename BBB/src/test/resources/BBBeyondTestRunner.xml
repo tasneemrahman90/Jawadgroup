@@ -4,11 +4,11 @@
 
 <suite name="Bed Bath And Beyond " parallel="tests">
 
-    <parameter name="useCloudEnv" value="false"/>
+    <parameter name="useCloudEnv" value="true"/>
     <parameter name="userName" value="Dimitar"/>
-    <parameter name="key" value="6f132866-de72-43fd-b49a-e6f81d26bfe3"/>
+    <parameter name="accessKey" value="6f132866-de72-43fd-b49a-e6f81d26bfe3"/>
     <parameter name="os" value="windows"/>
-    <parameter name="browser" value="firefox"/>
+    <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="47.0.1"/>
     <parameter name="url" value="http://www.bedbathandbeyond.com"/>
 <!--firefox -48-->

@@ -1,6 +1,8 @@
 package DropdownBoxElements;
 
 import Common.Base;
+import org.openqa.selenium.WebElement;
+import org.testng.annotations.Test;
 
 import java.util.List;
 
@@ -9,18 +11,17 @@ import java.util.List;
  */
 public class Dropdown extends Base {
 
- //   @Test
+  //  @Test
     public void Dropdown() throws InterruptedException {
 
-        List<String> text = getTextFromWebElements(".//*[@id='globalSearchForm']/div[1]/a");
-
-        //get each text from the list, then enter each text into input box.
-        for (int i = 0; i < text.size(); i++) {
-            typeByCss("#searchFormInput", text.get(i));
-            keysInput("#searchFormInput");
-            clearInput("#searchFormInput");
-            sleepFor(3);
-            text = getTextFromWebElements(".//*[@id='globalSearchForm']/div[1]/a");
+        clickByCss(".dropDownWrapper");
+        sleepFor(5);
+        for(int i=1; i<=12;i++){
+            clickByXpath(".//*[@id='globalSearchForm']/div[1]/ul/li["+ i + "]/span");
+            sleepFor(10);
+            driver.navigate().back();
         }
+
+
     }
 }

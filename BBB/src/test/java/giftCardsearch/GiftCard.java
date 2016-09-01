@@ -2,12 +2,13 @@ package giftCardsearch;
 
 import Common.Base;
 import org.openqa.selenium.By;
+import org.testng.annotations.Test;
 
 /**
  * Created by Zaqc on 8/26/2016.
  */
 public class GiftCard  extends Base{
-  //  @Test
+ //  @Test
     public void SearchForGiftCard(){
         clickByXpath(".//*[@id='globalSearchForm']/div[1]/a");
         clickByXpath(".//*[@id='globalSearchForm']/div[1]/ul/li[2]/span");

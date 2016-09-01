@@ -11,7 +11,7 @@ import java.util.List;
  */
 public class Dropdown extends Base {
 
-  //  @Test
+    @Test
     public void Dropdown() throws InterruptedException {
 
         clickByCss(".dropDownWrapper");

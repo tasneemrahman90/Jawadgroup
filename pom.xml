@@ -111,6 +111,34 @@
     <!--            <module>NYTimes</module>-->
     <!--        </modules>-->
     <!--    </profile>-->
-    <!--</profiles>-->
+    <profiles>
+             
+        <profile>
+            <id>BBB-app</id>
+            <modules>
+                <module>Generic</module>
+                <module>BBB</module>
+            </modules>
+        </profile>
+    
+    <profile>
+            <id>Castle-app</id>
+            <modules>
+                <module>Generic</module>
+                <module>Castle</module></module>
+            </modules>
+        </profile>
+        <profile>
+            <id>default</id>
+            <activation>
+                <jdk>1.8</jdk>
+            </activation>
+            <modules>
+                <module>Generic</module>
+                <module>BBB</module>
+                <module>Castle</module>
+            </modules>
+        </profile>
+</profiles>
 
 </project>

@@ -144,6 +144,9 @@ public class Base {
         list = driver.findElements(By.id(locator));
         return list;
     }
+    public void navigateTo(String url){
+        driver.navigate().to(url);
+    }
     public List<String> getTextFromWebElements(String locator){
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();
@@ -251,6 +254,13 @@ public class Base {
         driver.findElement(By.linkText(locator)).findElement(By.tagName("a")).getText();
     }
 
+    public void iframeHandle2(int fvalue){
+        driver.switchTo().frame(fvalue);
+    }
+    public void iframeHandle2(WebElement element){
+        driver.switchTo().frame(element);
+    }
+
     //Taking Screen shots
     public void takeScreenShot()throws IOException {
         File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
@@ -261,9 +271,19 @@ public class Base {
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
+    public void waitUntilPresenceLocated(By locator){
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement element = wait.until(ExpectedConditions.presenceOfElementLocated(locator));
+    }
     public void waitUntilVisible(By locator){
         WebDriverWait wait = new WebDriverWait(driver, 10);
         WebElement element = wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
+    }
+
+    public void waitUntilVisibleAndClick(By locator){
+        waitUntilVisible(locator);
+        driver.findElement(locator).click();
+
     }
     public void waitUntilSelectable(By locator){
         WebDriverWait wait = new WebDriverWait(driver, 10);

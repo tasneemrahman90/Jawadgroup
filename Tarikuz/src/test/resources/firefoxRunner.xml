@@ -6,12 +6,12 @@
     <parameter name="os" value="mac"/>
     <parameter name="browserName" value="firefox"/>
     <parameter name="browserVersion" value="47.0.1"/>
-    <parameter name="url" value="http://www.lufthansa.com/online/portal/lh/us/homepage"/>
+    <parameter name="url" value="https://washingtondc.craigslist.org/"/>
 
-    <test name = "Lufthansa castle.Search">
+    <test name = "Craigslist search">
         <classes>
 
-            <class name="Lufthansa.castle.Search"/>
+            <class name="Craigslist.Search"/>
 
 
         </classes>

@@ -11,7 +11,10 @@ public class SignIn extends Base {
     @Test
     public void signIn() throws InterruptedException{
         clickByCss("#gh-ug>a");
-        driver.findElement(By.cssSelector("#620626340")).sendKeys("j@yahoo.com");
+        driver.findElement(By.cssSelector("#formDiv #pri_signin .fld")).sendKeys("s@yahoo.com");
+        typeByCssNEnter("#formDiv #pri_signin .m19 .fld","password");
+
+       // driver.findElement(By.cssSelector("#620626340")).sendKeys("j@yahoo.com");
         //typeByXpath(".//*[@id='1047708240']","s@yahoo.com");
         //driver.findElement(By.id("#1047798240")).sendKeys("j@yahoo.com");
         //typeByCss("#1047708240","s@yahoo.com");

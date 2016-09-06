@@ -1,0 +1,495 @@
+0 [Forwarding newSession on session null to remote] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+11 [Forwarding newSession on session null to remote] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+13 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 0 of 2000; total allocated: 0 of 2000]
+38 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+40 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Opening connection {}->http://ondemand.saucelabs.com:80
+54 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connecting to ondemand.saucelabs.com/162.222.75.39:80
+91 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.conn.DefaultHttpClientConnectionOperator  - Connection established 192.168.2.10:53522<->162.222.75.39:80
+91 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+92 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request POST /wd/hub/session HTTP/1.1
+92 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+93 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+97 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> POST /wd/hub/session HTTP/1.1
+97 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+97 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Length: 83
+97 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+98 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+98 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+98 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+98 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "POST /wd/hub/session HTTP/1.1[\r][\n]"
+98 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+98 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 83[\r][\n]"
+99 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+99 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+99 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+99 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+99 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+99 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "{"desiredCapabilities":{"browserName":"firefox","version":"47.0","platform":"MAC"}}"
+143 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 401 Unauthorized[\r][\n]"
+143 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+143 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:05 GMT[\r][\n]"
+144 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: text/plain[\r][\n]"
+144 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "WWW-Authenticate: Basic realm="Sauce OnDemand"[\r][\n]"
+144 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+144 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+144 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "102[\r][\n]"
+144 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Sauce Labs Authentication Error.[\n]"
+144 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "You used username 'None' and access key 'None' to authenticate, which are not valid Sauce Labs credentials.[\n]"
+144 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\n]"
+144 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "The following desired capabilities were received:[\n]"
+144 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{'browserName': 'firefox',[\n]"
+145 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << " 'platform': 'MAC',[\n]"
+145 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << " 'version': '47.0'}[\r][\n]"
+145 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+145 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+149 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 401 Unauthorized
+149 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+149 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:05 GMT
+149 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: text/plain
+149 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << WWW-Authenticate: Basic realm="Sauce OnDemand"
+149 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+157 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+157 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.auth.HttpAuthenticator  - Authentication required
+157 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.auth.HttpAuthenticator  - ondemand.saucelabs.com:80 requested authentication
+158 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.client.TargetAuthenticationStrategy  - Authentication schemes in the order of preference: [Negotiate, Kerberos, NTLM, Digest, Basic]
+158 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.client.TargetAuthenticationStrategy  - Challenge for Negotiate authentication scheme not available
+158 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.client.TargetAuthenticationStrategy  - Challenge for Kerberos authentication scheme not available
+158 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.client.TargetAuthenticationStrategy  - Challenge for NTLM authentication scheme not available
+158 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.client.TargetAuthenticationStrategy  - Challenge for Digest authentication scheme not available
+162 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.auth.HttpAuthenticator  - Selected authentication options: [BASIC [complete=true]]
+164 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+165 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request POST /wd/hub/session HTTP/1.1
+165 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: CHALLENGED
+165 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.auth.HttpAuthenticator  - Generating response to an authentication challenge using basic scheme
+195 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+195 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> POST /wd/hub/session HTTP/1.1
+195 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+195 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Length: 83
+195 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+195 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+195 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+195 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+195 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Authorization: Basic amF3YWQwODM6OWM2MTRhMDItODY1ZC00YWY2LWIyMjctMzQ2Zjg5ZWYwZjg0
+196 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "POST /wd/hub/session HTTP/1.1[\r][\n]"
+196 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+196 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 83[\r][\n]"
+196 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+196 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+196 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+196 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+196 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Authorization: Basic amF3YWQwODM6OWM2MTRhMDItODY1ZC00YWY2LWIyMjctMzQ2Zjg5ZWYwZjg0[\r][\n]"
+196 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+196 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "{"desiredCapabilities":{"browserName":"firefox","version":"47.0","platform":"MAC"}}"
+10760 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+10761 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+10761 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:05 GMT[\r][\n]"
+10761 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+10761 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+10761 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+10761 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "255[\r][\n]"
+10761 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{"status": 0, "sessionId": "cacdf98ecd2a42338d4eba467514b9cd", "value": {"rotatable": false, "takesScreenshot": true, "acceptSslCerts": true, "cssSelectorsEnabled": true, "javascriptEnabled": true, "webdriver.remote.sessionid": "cacdf98ecd2a42338d4eba467514b9cd", "databaseEnabled": true, "locationContextEnabled": true, "platform": "MAC", "browserName": "firefox", "version": "47.0.1", "hasMetadata": true, "nativeEvents": false, "applicationCacheEnabled": true, "webStorageEnabled": true, "handlesAlerts": true}, "state": null, "hCode": 752332552, "class": "org.openqa.selenium.remote.Response"}[\r][\n]"
+10761 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+10761 [Forwarding newSession on session null to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+10762 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+10762 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+10762 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:05 GMT
+10762 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+10762 [Forwarding newSession on session null to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+10762 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+10762 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.auth.HttpAuthenticator  - Authentication succeeded
+10763 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.client.TargetAuthenticationStrategy  - Caching 'basic' auth scheme for http://ondemand.saucelabs.com:80
+10775 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {}->http://ondemand.saucelabs.com:80] can be kept alive indefinitely
+10775 [Forwarding newSession on session null to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+10784 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+10784 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+10784 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+10784 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+10784 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Stale connection check
+10786 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[read] I/O error: Read timed out"
+10786 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+10786 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/timeouts HTTP/1.1
+10787 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+10787 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+10787 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/timeouts HTTP/1.1
+10787 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+10787 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Length: 30
+10787 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/timeouts HTTP/1.1[\r][\n]"
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 30[\r][\n]"
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+10788 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "{"type":"implicit","ms":20000}"
+10965 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+10965 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+10965 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:16 GMT[\r][\n]"
+10966 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+10966 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+10966 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+10966 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "a5[\r][\n]"
+10966 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{"status": 0, "sessionId": "cacdf98ecd2a42338d4eba467514b9cd", "value": null, "state": "success", "hCode": 117949883, "class": "org.openqa.selenium.remote.Response"}[\r][\n]"
+10966 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+10966 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+10966 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+10969 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+10969 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:16 GMT
+10969 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+10969 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+10970 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+10970 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {}->http://ondemand.saucelabs.com:80] can be kept alive indefinitely
+10970 [Forwarding setTimeout on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+10972 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+10972 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+10972 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+10972 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+10973 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Stale connection check
+10974 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[read] I/O error: Read timed out"
+10974 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+10974 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/url HTTP/1.1
+10975 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+10975 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+10975 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/url HTTP/1.1
+10975 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+10975 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Length: 32
+10975 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+10975 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+10975 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+10975 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+10975 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/url HTTP/1.1[\r][\n]"
+10976 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+10976 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 32[\r][\n]"
+10976 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+10976 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+10976 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+10976 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+10976 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+10976 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "{"url":"http://www.castle.com/"}"
+16293 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+16293 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+16293 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:16 GMT[\r][\n]"
+16293 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+16293 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+16294 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+16294 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "a6[\r][\n]"
+16294 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{"status": 0, "sessionId": "cacdf98ecd2a42338d4eba467514b9cd", "value": null, "state": "success", "hCode": 1435139392, "class": "org.openqa.selenium.remote.Response"}[\r][\n]"
+16294 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+16294 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+16294 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+16294 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+16294 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:16 GMT
+16294 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+16294 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+16295 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+16295 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {}->http://ondemand.saucelabs.com:80] can be kept alive indefinitely
+16295 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+16299 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+16300 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+16300 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+16300 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+16300 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Stale connection check
+16301 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[read] I/O error: Read timed out"
+16302 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+16302 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/window/current/maximize HTTP/1.1
+16302 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+16302 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+16302 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/window/current/maximize HTTP/1.1
+16302 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+16302 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Length: 26
+16302 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+16302 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/window/current/maximize HTTP/1.1[\r][\n]"
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 26[\r][\n]"
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+16303 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "{"windowHandle":"current"}"
+16913 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+16913 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+16913 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:21 GMT[\r][\n]"
+16913 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "a5[\r][\n]"
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{"status": 0, "sessionId": "cacdf98ecd2a42338d4eba467514b9cd", "value": null, "state": "success", "hCode": 848083672, "class": "org.openqa.selenium.remote.Response"}[\r][\n]"
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:21 GMT
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+16914 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+16915 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {}->http://ondemand.saucelabs.com:80] can be kept alive indefinitely
+16915 [Forwarding maximizeWindow on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+16918 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+16918 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+16919 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+16919 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+16919 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Stale connection check
+16920 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[read] I/O error: Read timed out"
+16920 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/url HTTP/1.1
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/url HTTP/1.1
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Length: 28
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/url HTTP/1.1[\r][\n]"
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 28[\r][\n]"
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+16921 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+16922 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+16922 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "{"url":"http://castle.com/"}"
+20912 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+20912 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+20912 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:22 GMT[\r][\n]"
+20912 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+20912 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+20912 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+20912 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "a5[\r][\n]"
+20912 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{"status": 0, "sessionId": "cacdf98ecd2a42338d4eba467514b9cd", "value": null, "state": "success", "hCode": 186616623, "class": "org.openqa.selenium.remote.Response"}[\r][\n]"
+20912 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+20912 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+20913 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+20913 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+20913 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:22 GMT
+20913 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+20913 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+20913 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+20914 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {}->http://ondemand.saucelabs.com:80] can be kept alive indefinitely
+20914 [Forwarding get on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+20918 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+20919 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+20919 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+20919 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+20919 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Stale connection check
+20921 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[read] I/O error: Read timed out"
+20921 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+20921 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element HTTP/1.1
+20921 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+20921 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+20921 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element HTTP/1.1
+20921 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+20921 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Length: 50
+20921 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element HTTP/1.1[\r][\n]"
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 50[\r][\n]"
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+20922 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "{"using":"css selector","value":"#menu-item-81>a"}"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:26 GMT[\r][\n]"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "b2[\r][\n]"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{"status": 0, "sessionId": "cacdf98ecd2a42338d4eba467514b9cd", "value": {"ELEMENT": "0"}, "state": "success", "hCode": 1969444815, "class": "org.openqa.selenium.remote.Response"}[\r][\n]"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+21131 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+21132 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:26 GMT
+21132 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+21132 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+21132 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+21132 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {}->http://ondemand.saucelabs.com:80] can be kept alive indefinitely
+21132 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+21137 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+21138 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+21138 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+21138 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+21138 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Stale connection check
+21139 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[read] I/O error: Read timed out"
+21139 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+21139 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element/0/click HTTP/1.1
+21139 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element/0/click HTTP/1.1
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Length: 10
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element/0/click HTTP/1.1[\r][\n]"
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 10[\r][\n]"
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+21140 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "{"id":"0"}"
+21742 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+21742 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+21742 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:26 GMT[\r][\n]"
+21742 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+21742 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+21742 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+21743 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "a6[\r][\n]"
+21743 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{"status": 0, "sessionId": "cacdf98ecd2a42338d4eba467514b9cd", "value": null, "state": "success", "hCode": 1448914283, "class": "org.openqa.selenium.remote.Response"}[\r][\n]"
+21743 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+21743 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+21743 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+21743 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+21743 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:26 GMT
+21743 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+21743 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+21743 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+21744 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {}->http://ondemand.saucelabs.com:80] can be kept alive indefinitely
+21744 [Forwarding clickElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+21746 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+21746 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+21746 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+21746 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+21746 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Stale connection check
+21748 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[read] I/O error: Read timed out"
+21748 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+21748 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element HTTP/1.1
+21748 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+21748 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element HTTP/1.1
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Length: 66
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element HTTP/1.1[\r][\n]"
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 66[\r][\n]"
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+21749 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+21750 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+21750 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+21750 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+21750 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "{"using":"css selector","value":".cb-search-field.cb-font-header"}"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:27 GMT[\r][\n]"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "b1[\r][\n]"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{"status": 0, "sessionId": "cacdf98ecd2a42338d4eba467514b9cd", "value": {"ELEMENT": "1"}, "state": "success", "hCode": 963532096, "class": "org.openqa.selenium.remote.Response"}[\r][\n]"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+23352 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+23353 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+23353 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:27 GMT
+23353 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+23353 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+23353 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+23353 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {}->http://ondemand.saucelabs.com:80] can be kept alive indefinitely
+23353 [Forwarding findElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+23358 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+23358 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+23358 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+23358 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+23358 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Stale connection check
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[read] I/O error: Read timed out"
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element/1/value HTTP/1.1
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element/1/value HTTP/1.1
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Type: application/json; charset=utf-8
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Content-Length: 36
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+23360 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "POST /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/element/1/value HTTP/1.1[\r][\n]"
+23361 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Type: application/json; charset=utf-8[\r][\n]"
+23361 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Content-Length: 36[\r][\n]"
+23361 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+23361 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+23361 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+23361 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+23361 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+23361 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "{"id":"1","value":["privacy","[0xee][0x80][0x87]"]}"
+23721 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+23721 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+23721 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:28 GMT[\r][\n]"
+23721 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+23721 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+23721 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+23721 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "a6[\r][\n]"
+23721 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{"status": 0, "sessionId": "cacdf98ecd2a42338d4eba467514b9cd", "value": null, "state": "success", "hCode": 1485493398, "class": "org.openqa.selenium.remote.Response"}[\r][\n]"
+23721 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+23721 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+23722 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+23722 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+23722 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:28 GMT
+23722 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+23722 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+23722 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+23722 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {}->http://ondemand.saucelabs.com:80] can be kept alive indefinitely
+23722 [Forwarding sendKeysToElement on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+28730 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAddCookies  - CookieSpec selected: default
+28730 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.client.protocol.RequestAuthCache  - Auth cache not set in the context
+28730 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection request: [route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+28732 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[read] I/O error: Read timed out"
+28732 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection leased: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 0; route allocated: 1 of 2000; total allocated: 1 of 2000]
+28732 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Stale connection check
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[read] I/O error: Read timed out"
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.DefaultManagedHttpClientConnection  - http-outgoing-0: set socket timeout to 10800000
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Executing request DELETE /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/window HTTP/1.1
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Target auth state: UNCHALLENGED
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Proxy auth state: UNCHALLENGED
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> DELETE /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/window HTTP/1.1
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Host: ondemand.saucelabs.com:80
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Connection: Keep-Alive
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 >> Accept-Encoding: gzip,deflate
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "DELETE /wd/hub/session/cacdf98ecd2a42338d4eba467514b9cd/window HTTP/1.1[\r][\n]"
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Host: ondemand.saucelabs.com:80[\r][\n]"
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Connection: Keep-Alive[\r][\n]"
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "User-Agent: Apache-HttpClient/4.5.1 (Java/1.8.0_91)[\r][\n]"
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "Accept-Encoding: gzip,deflate[\r][\n]"
+28734 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 >> "[\r][\n]"
+29189 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "HTTP/1.1 200 OK[\r][\n]"
+29189 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Transfer-Encoding: chunked[\r][\n]"
+29189 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Date: Tue, 06 Sep 2016 05:08:34 GMT[\r][\n]"
+29189 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Content-Type: application/json;charset=UTF-8[\r][\n]"
+29189 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "Server: monocle/0.37[\r][\n]"
+29189 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+29189 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "a5[\r][\n]"
+29189 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "{"status": 0, "sessionId": "cacdf98ecd2a42338d4eba467514b9cd", "value": null, "state": "success", "hCode": 933411334, "class": "org.openqa.selenium.remote.Response"}[\r][\n]"
+29189 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "0[\r][\n]"
+29189 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.wire  - http-outgoing-0 << "[\r][\n]"
+29190 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << HTTP/1.1 200 OK
+29190 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Transfer-Encoding: chunked
+29190 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Date: Tue, 06 Sep 2016 05:08:34 GMT
+29190 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Content-Type: application/json;charset=UTF-8
+29190 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.headers  - http-outgoing-0 << Server: monocle/0.37
+29190 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.execchain.MainClientExec  - Connection can be kept alive indefinitely
+29190 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection [id: 0][route: {}->http://ondemand.saucelabs.com:80] can be kept alive indefinitely
+29190 [Forwarding close on session cacdf98ecd2a42338d4eba467514b9cd to remote] DEBUG org.apache.http.impl.conn.PoolingHttpClientConnectionManager  - Connection released: [id: 0][route: {}->http://ondemand.saucelabs.com:80][total kept alive: 1; route allocated: 1 of 2000; total allocated: 1 of 2000]
+located: 1 of 2000]

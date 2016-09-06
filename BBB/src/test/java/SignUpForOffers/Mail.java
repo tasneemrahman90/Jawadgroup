@@ -10,25 +10,27 @@ import org.testng.annotations.Test;
  * Created by Zaqc on 8/31/2016.
  */
 public class Mail extends Base{
- //   @Test
+//    @Test
     public void signUpForMail()throws InterruptedException{
+
         clickByXpath(".//*[@id='promoArea']/ul/li[2]/a");
-        WebElement element = driver.findElement(By.xpath(".//*[@id='content']/div[5]/div[3]/div[2]/div/a"));
-
-        Actions actions = new Actions(driver);
-
-        actions.moveToElement(element).click().perform();
-        sleepFor(20);
-      //  clickByXpath(".//*[@id='content']/div[5]/div[3]/div[2]/div/a");
-//       typeByCss("#emailAddress","myemail@yahoo.conm");
-//       typeByCss(".container_12>div>table>tbody>tr>td>div>input", "myemail@yahoo.conm");
+        sleepFor(2);
+        clickByXpath(".//*[@id='content']/div[5]/div[3]/div[2]/div/a");
+        sleepFor(10);
+        scrollPageDown();
+       typeByXpath(".//*[@id='headerWrapper']/div[4]/div/table/tbody/tr[3]/td[2]","myemail@yahoo.com");
+//       typeByXpath(".//*[@id='headerWrapper']/div[4]/div/table/tbody/tr[4]/td[2]/div/input", "myemail@yahoo.conm");
 //       typeByXpath(".//*[@id='headerWrapper']/div[4]/div/table/tbody/tr[6]/td[2]/input", "MyFirstName");
 //       typeByXpath(".//*[@id='headerWrapper']/div[4]/div/table/tbody/tr[7]/td[2]/input","MyfamilyName" );
 //       typeByXpath(".//*[@id='headerWrapper']/div[4]/div/table/tbody/tr[8]/td[2]/input", "My Address 007");
 //       typeByXpath(".//*[@id='headerWrapper']/div[4]/div/table/tbody/tr[10]/td[2]/input" , "MyCity");
 //       clickByCss(".container_12>div>table>tbody>tr>td>select");
-//       clickByXPath(".//*[@id='headerWrapper']/div[4]/div/table/tbody/tr[11]/td[2]/select/option[9]/text()");
+//       clickByXpath(".//*[@id='headerWrapper']/div[4]/div/table/tbody/tr[11]/td[2]/select/option[9]/text()");
 //       typeByXpath(".//*[@id='headerWrapper']/div[4]/div/table/tbody/tr[12]/td[2]/input","80201");
+    }
+
+    public void typeById(String locator, String value){
+        driver.findElement(By.id(locator)).sendKeys((value));
     }
 }
 

@@ -37,6 +37,7 @@
                         <redirectTestOutputToFile>true</redirectTestOutputToFile>
                         <suiteXmlFiles>
                             <suiteXmlFile>target/test-classes/${CastleModuleRunner}</suiteXmlFile>
+                            <suiteXmlFile>target/test-classes/${EbayRunner}</suiteXmlFile>
                         </suiteXmlFiles>
                     </configuration>
                 </plugin>
@@ -45,6 +46,8 @@
 
     <properties>
         <CastleModuleRunner>firefoxCastle.xml</CastleModuleRunner>
+        <EbayRunner>firefoxEbay.xml</EbayRunner>
+
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 

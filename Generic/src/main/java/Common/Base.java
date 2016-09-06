@@ -58,11 +58,7 @@ public class Base {
     public WebDriver getLocalDriver(String os, String browserName){
 
         if(browserName.equalsIgnoreCase("firefox")){
-
             driver = new FirefoxDriver();
-
-
-
         }else if(browserName.equalsIgnoreCase("chrome")){
             if(os.equalsIgnoreCase("windows")){
                 System.setProperty("webdriver.chrome.driver","..\\Generic\\selenium-browser-driver\\chromedriver.exe");
@@ -147,10 +143,21 @@ public class Base {
     public void navigateTo(String url){
         driver.navigate().to(url);
     }
+
     public List<String> getTextFromWebElements(String locator){
         List<WebElement> element = new ArrayList<WebElement>();
         List<String> text = new ArrayList<String>();
         element = driver.findElements(By.cssSelector(locator));
+        for(WebElement web:element){
+            text.add(web.getText());
+        }
+
+        return text;
+    }
+    public List<String> getTextFromWebElementsByXpath(String locator){
+        List<WebElement> element = new ArrayList<WebElement>();
+        List<String> text = new ArrayList<String>();
+        element = driver.findElements(By.xpath(locator));
         for(WebElement web:element){
             text.add(web.getText());
         }
@@ -206,7 +213,8 @@ public class Base {
         try {
             WebElement element = driver.findElement(By.cssSelector(locator));
             Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
+            action.moveToElement(element).perform();
+           // Actions hover = action.moveToElement(element);
         }catch(Exception ex){
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -220,7 +228,8 @@ public class Base {
         try {
             WebElement element = driver.findElement(By.xpath(locator));
             Actions action = new Actions(driver);
-            Actions hover = action.moveToElement(element);
+            action.moveToElement(element).perform();
+           // Actions hover = action.moveToElement(element);
         }catch(Exception ex){
             System.out.println("First attempt has been done, This is second try");
             WebElement element = driver.findElement(By.cssSelector(locator));
@@ -229,6 +238,16 @@ public class Base {
 
         }
 
+    }
+
+    // scrolling Down
+    public void scrollPageDown(){
+        ((JavascriptExecutor) driver).executeScript("scroll(0,200)");
+    }
+    public void scrollToElementById(String locator){
+        WebElement element = driver.findElement(By.cssSelector(locator));
+        JavascriptExecutor je = (JavascriptExecutor) driver;
+        je.executeScript("arguments[0].scrollIntoView(true)", element );
     }
     //handling Alert
     public void okAlert(){

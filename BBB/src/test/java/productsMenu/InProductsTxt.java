@@ -1,19 +1,27 @@
 package productsMenu;
 
 import Common.Base;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by Zaqc on 8/31/2016.
  */
 public class InProductsTxt extends Base  {
-    @Test
+//    @Test
     public void getProductsTxt() throws InterruptedException {
         clickByXpath(".//*[@id='collegeBridalArea']/div[1]/a");
-        for (int i = 1; i < 14; i++) {
-            mouseHoverByXpath(".//*[@id='collegeBridalArea']/div[1]/div/ul/li[" + i + "]/a");
-            sleepFor(5);
+        List<String> list = new ArrayList<String>(14);
+        for (int i = 0; i < list.size(); i++) {
+            list = getTextFromWebElementsByXpath(".//*[@id='collegeBridalArea']/div[1]/div/ul/li[" + i + "]/a");
         }
-        System.out.print(getTextById("shopLinkPanelCat_13806"));
-    }
+            for(String el: list)
+            System.out.print(list);
+
+
+
+   }
 }

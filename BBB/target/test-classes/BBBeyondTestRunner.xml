@@ -2,13 +2,13 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 
 
-<suite name="Bed Bath And Beyond " parallel="tests">
+<suite name="Bed Bath And Beyond " parallel="false">
 
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="userName" value="Dimitar"/>
-    <parameter name="accessKey" value="6f132866-de72-43fd-b49a-e6f81d26bfe3"/>
+    <parameter name="accessKey" value="ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQCLnGOMvRT6NI+rCDeX9BwSWsYbeOy3tTMcgUiGL5QGDr1YvRUPydFbL28wu95f7+zFP5SNVvwC5F27kn3H5/gZuw7FcCLXv3n9v0EWgf0EtP4KlMd6SdJcB1A4+W1c8YHoQesrvaD26VoJ+x+xzE2NiEUV3HB5lJ+Jbs7PjdSO4c9UjXiap0uzFA1MPz6OFHvmhs8FDXM2/UQyhGu87vh6PMgs40MCPGSDN5kiSKFLEQtfDjcCbYFb9vwVdRuQgWbnZeCtBkwH45dO7kjTivPxgQ25vdNxR02T6xXh/cVQ8/Z8VLn/lXrQhQdrJmaK3ccqMcVDvutevW+q037xnxgf"/>
     <parameter name="os" value="windows"/>
-    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserName" value="chrome"/>
     <parameter name="browserVersion" value="47.0.1"/>
     <parameter name="url" value="http://www.bedbathandbeyond.com"/>
 <!--firefox -48-->
@@ -61,12 +61,6 @@
     <test name = "Sign Up Mobile">
         <classes>
             <class name="SignUpForOffers.Mobile"/>
-        </classes>
-    </test>
-
-    <test name = "bestBuy.Products Menu">
-        <classes>
-            <class name="productsMenu.bestBuy.Products"/>
         </classes>
     </test>
     <test name = "In bestBuy.Products Menu">

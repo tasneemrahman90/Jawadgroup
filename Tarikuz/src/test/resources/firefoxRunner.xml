@@ -11,7 +11,12 @@
     <test name = "Craigslist search">
         <classes>
 
-            <class name="Craigslist.Search"/>
+            <class name="Craigslist.CitySearch"/>
+            <class name="Craigslist.LogIn"/>
+            <class name="Craigslist.CRV"/>
+            <class name="Craigslist.FreeSection"/>
+            <class name="Craigslist.PriceLimit"/>
+
 
 
         </classes>

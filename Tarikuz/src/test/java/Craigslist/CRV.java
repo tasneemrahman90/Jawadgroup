@@ -1,5 +1,6 @@
 package Craigslist;
 
+import org.omg.PortableServer.ThreadPolicyValue;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 import tarikBase.Core;
@@ -7,7 +8,7 @@ import tarikBase.Core;
 /**
  * Created by tzaman on 9/1/16.
  */
-public class Search extends Core {
+public class CRV extends Core {
         @Test
         public void test() throws InterruptedException {
             driver.findElement(By.xpath(".//*[@id='sss0']/li[13]/a/span")).click();
@@ -19,5 +20,9 @@ public class Search extends Core {
 
             Thread.sleep(5000);
         }
+
+
+
+
     }
 

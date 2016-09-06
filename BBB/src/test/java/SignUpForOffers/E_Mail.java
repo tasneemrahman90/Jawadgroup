@@ -12,10 +12,11 @@ import org.testng.annotations.Test;
 public class E_Mail extends Base{
 
 
-    //    @Test
+ //       @Test
         public void signUpForMail() throws InterruptedException{
 
             clickByXpath(".//*[@id='promoArea']/ul/li[2]/a");
+            scrollPageDown();
            // sleepFor(20);
             WebElement element = driver.findElement(By.xpath(".//*[@id='content']/div[5]/div[1]/div[2]/div/a"));
 
@@ -23,7 +24,7 @@ public class E_Mail extends Base{
 
             actions.moveToElement(element).sendKeys().perform();
             sleepFor(20);
-           // clickByXpath(".//*[@id='content']/div[5]/div[1]/div[2]/div/a");
+            clickByXpath(".//*[@id='content']/div[5]/div[1]/div[2]/div/a");
 
 //            typeByCss("#emailAddress", "myemail@yahoo.conm");
 //            typeByCss(".container_12>div>table>tbody>tr>td>input", "08401");

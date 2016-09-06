@@ -12,8 +12,8 @@ public class login extends Base {
     public void loginUser() throws InterruptedException {
         typeByCss("#email", "a11@hh.com");
         typeByCss("#pass", "1111");
-        clickByCss("u_0_n");
-        sleepFor(3);
+        clickByCss("#u_0_n");
+        sleepFor(7);
 
     }
 }

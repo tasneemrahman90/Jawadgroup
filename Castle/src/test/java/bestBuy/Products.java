@@ -27,6 +27,13 @@ public class Products extends Base {
 
 
     }
+
+    @Test
+    public void test2() throws InterruptedException {
+        list();
+
+    }
+
 }
 
 //data-lid = ubr_app

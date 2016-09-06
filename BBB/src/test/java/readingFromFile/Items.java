@@ -12,7 +12,7 @@ import java.io.IOException;
  * Created by Zaqc on 9/1/2016.
  */
 public class Items extends Base {
-    @Test
+//    @Test
     public void searchUsingExcelFile() throws IOException, InterruptedException {
         //initialize Search page factory
         SearchItems search = PageFactory.initElements(driver, SearchItems.class);

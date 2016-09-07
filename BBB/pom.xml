@@ -48,13 +48,5 @@
         <BBBAppRunner>BBBeyondTestRunner.xml</BBBAppRunner>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
-    <project>
- 
-  <build>
-    <defaultGoal>install</defaultGoal>
-  
-  </build>
-  
-</project
-
-</project>
+    
+ </project>

@@ -157,8 +157,8 @@
                 <module>Castle</module>
                 <module>BBB</module>
                 <module>Chase</module>
-                <module>Tarikuz</module>
-            </modules>
+<!--                 <module>Tarikuz</module>
+ -->            </modules>
         </profile>
     </profiles>
 </project>

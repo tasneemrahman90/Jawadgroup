@@ -10,6 +10,8 @@ import org.testng.annotations.Test;
 public class SignIn extends Base {
     @Test
     public void signIn() throws InterruptedException{
+        navigateTo("http://www.ebay.com");
+
         clickByCss("#gh-ug>a");
         driver.findElement(By.cssSelector("#formDiv #pri_signin .fld")).sendKeys("s@yahoo.com");
         typeByCssNEnter("#formDiv #pri_signin .m19 .fld","password");

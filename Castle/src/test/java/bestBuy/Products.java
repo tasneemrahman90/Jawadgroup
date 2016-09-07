@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 public class Products extends Base {
     @Test
     public void list() throws InterruptedException {
+        navigateTo("http://www.bestbuy.com");
         clickByCss(".close");
         sleepFor(2);
        // mouseHoverByCSS("#menu0");
@@ -28,12 +29,11 @@ public class Products extends Base {
 
     }
 
-    @Test
-    public void test2() throws InterruptedException {
-        list();
-
-    }
+//    @Test
+//    public void test2() throws InterruptedException {
+//        list();
+//
+//    }
 
 }
 
-//data-lid = ubr_app

@@ -15,7 +15,7 @@ import java.io.IOException;
  */
 public class giftCardAddToCart extends Base {
 
-     @Test
+//     @Test
     public void giftCAddToCart() throws InterruptedException, IOException{
 
         clickByXpath(".//*[@id='globalSearchForm']/div[1]/a");

@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 public class Register extends Base {
     @Test
     public void register() throws InterruptedException {
+        navigateTo("http://www.ebay.com");
+
         clickByCss("#gh-ug>a");
         clickByCss(".ml51.tx");
         clickByCss(".gspr.radio-on");

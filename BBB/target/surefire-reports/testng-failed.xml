@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" verbose="0" name="Failed suite [Bed Bath And Beyond ]" parallel="tests">
+  <parameter name="useCloudEnv" value="true"/>
+  <parameter name="os" value="mac"/>
+  <parameter name="accessKey" value="806b9c37-3173-41da-adf3-114ccd386fe4"/>
+  <parameter name="browserVersion" value="47.0"/>
+  <parameter name="browserName" value="firefox"/>
+  <parameter name="userName" value="DimitarMilevskiPNT"/>
+  <parameter name="url" value="http://www.bedbathandbeyond.com"/>
+  <test name="Bed Bath And Beyond castle.Search">
+    <classes>
+      <class name="search.SearchContent"/>
+    </classes>
+  </test> <!-- Bed Bath And Beyond castle.Search -->
+  <test name="Bed Bath And Beyond Gift Card castle.Search">
+    <classes>
+      <class name="giftCardsearch.GiftCard"/>
+    </classes>
+  </test> <!-- Bed Bath And Beyond Gift Card castle.Search -->
+  <test name="BBB Gift Card Add To Card">
+    <classes>
+      <class name="addToCart.giftCardAddToCart"/>
+    </classes>
+  </test> <!-- BBB Gift Card Add To Card -->
+  <test name="Find Store">
+    <classes>
+      <class name="findAStore.FindStore"/>
+    </classes>
+  </test> <!-- Find Store -->
+  <test name="Offers">
+    <classes>
+      <class name="SignUpForOffers.Offers"/>
+    </classes>
+  </test> <!-- Offers -->
+  <test name="Dropdown Menu">
+    <classes>
+      <class name="DropdownBoxElements.Dropdown"/>
+    </classes>
+  </test> <!-- Dropdown Menu -->
+  <test name="Sign Up E-Mail">
+    <classes>
+      <class name="SignUpForOffers.E_Mail"/>
+    </classes>
+  </test> <!-- Sign Up E-Mail -->
+  <test name="Sign Up Mail">
+    <classes>
+      <class name="SignUpForOffers.Mail"/>
+    </classes>
+  </test> <!-- Sign Up Mail -->
+  <test name="Sign Up Mobile">
+    <classes>
+      <class name="SignUpForOffers.Mobile"/>
+    </classes>
+  </test> <!-- Sign Up Mobile -->
+  <test name="In bestBuy.Products Menu">
+    <classes>
+      <class name="productsMenu.InProducts"/>
+    </classes>
+  </test> <!-- In bestBuy.Products Menu -->
+  <test name="In bestBuy.Products Get TXT">
+    <classes>
+      <class name="productsMenu.InProductsTxt"/>
+    </classes>
+  </test> <!-- In bestBuy.Products Get TXT -->
+  <test name="Read From File">
+    <classes>
+      <class name="readingFromFile.Items"/>
+    </classes>
+  </test> <!-- Read From File -->
+</suite> <!-- Failed suite [Bed Bath And Beyond ] -->

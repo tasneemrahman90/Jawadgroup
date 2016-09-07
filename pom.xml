@@ -126,6 +126,28 @@
             </modules>
         </profile>
         <profile>
+            <id>BBB-Module</id>
+            <modules>
+                <module>Generic</module>
+                <module>BBB</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>Chase-Module</id>
+            <modules>
+                <module>Generic</module>
+                <module>Chase</module>
+            </modules>
+        </profile>
+        <profile>
+            <id>tarikuz-Module</id>
+            <modules>
+                <module>Generic</module>
+                <module>Tarikuz</module>
+            </modules>
+        </profile>
+
+        <profile>
             <id>default</id>
             <activation>
                 <jdk>1.8</jdk>
@@ -133,6 +155,9 @@
             <modules>
                 <module>Generic</module>
                 <module>Castle</module>
+                <module>BBB</module>
+                <module>Chase</module>
+                <module>Tarikuz</module>
             </modules>
         </profile>
     </profiles>

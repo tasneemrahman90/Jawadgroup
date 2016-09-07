@@ -9,6 +9,8 @@ import org.testng.annotations.Test;
 public class Search extends Base {
     @Test
     public void search() throws InterruptedException {
+        navigateTo("http://www.ebay.com");
+
         typeByCss("#gh-ac","laptop");
         clickByCss("#gh-btn");
         sleepFor(2);

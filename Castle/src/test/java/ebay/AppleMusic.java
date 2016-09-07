@@ -10,6 +10,7 @@ import org.testng.annotations.Test;
 public class AppleMusic extends Base {
     @Test
     public void test() throws InterruptedException {
+        navigateTo("http://www.ebay.com");
         clickByCss("#pd-overlay");
        // clickByCss("html>body>center>a>img");
        // waitUntilClickAble(By.cssSelector("#pd-close"));

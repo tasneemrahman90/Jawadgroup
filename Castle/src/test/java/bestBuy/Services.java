@@ -13,6 +13,8 @@ public class Services extends Base {
 
 
 
+        navigateTo("http://www.bestbuy.com/");
+
 
         clickByCss(".close");
         sleepFor(2);

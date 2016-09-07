@@ -37,7 +37,7 @@ public class Base {
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("rahmanww") String userName, @Optional("")
             String accessKey, @Optional("Windows 8") String os, @Optional("firefox") String browserName, @Optional("34")
-                              String browserVersion, @Optional("http://www.cnn.com") String url)throws IOException {
+                              String browserVersion, @Optional("http://www.google.com") String url)throws IOException {
         BasicConfigurator.configure();
         if(useCloudEnv==true){
             //run in cloud
@@ -107,6 +107,7 @@ public class Base {
     @AfterMethod
     public void cleanUp(){
         driver.close();
+        driver.quit();
     }
 
     public void clickByCss(String locator) {

@@ -10,7 +10,8 @@ public class SearchBestBuy extends Base {
     @Test
     public void search() throws InterruptedException {
 
-       // navigateTo("http://www.bestbuy.com/");
+
+        navigateTo("http://www.bestbuy.com/");
        // typeByCss("#abt-email-coll>input","jawad@yahoo.com");
         //clickByCss(".btn.btn-default");
 

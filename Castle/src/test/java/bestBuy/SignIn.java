@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class SignIn extends Base {
     @Test
     public void storeLocator() throws InterruptedException {
-      //  navigateTo("http://www.bestbuy.com/");
+        navigateTo("http://www.bestbuy.com/");
         clickByCss(".close");
         sleepFor(2);
         waitUntilClickAble(By.cssSelector(".user.link-text"));

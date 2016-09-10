@@ -13,7 +13,8 @@
         <module>Castle</module>
         <module>BBB</module>
         <module>Tarikuz</module>
-        <module>Chase</module>
+        <module>Ralphs</module>
+
 
         <!--<module>Amazon</module>-->
         <!--<module>Cnn</module>-->
@@ -53,12 +54,12 @@
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi-ooxml-schemas</artifactId>
-                <version>3.13</version>
+                <version>3.14</version>
             </dependency>
             <dependency>
                 <groupId>org.apache.poi</groupId>
                 <artifactId>poi</artifactId>
-                <version>3.13</version>
+                <version>3.14</version>
             </dependency>
             <dependency>
                 <groupId>log4j</groupId>
@@ -71,51 +72,30 @@
                 <version>2.6.2</version>
             </dependency>
             <dependency>
+                <groupId>org.apache.ant</groupId>
+                <artifactId>ant</artifactId>
+                <version>1.9.6</version>
+            </dependency>
+            <dependency>
                 <groupId>org.seleniumhq.selenium</groupId>
                 <artifactId>selenium-api</artifactId>
                 <version>2.53.1</version>
+            </dependency>
+            <dependency>
+                <groupId>junit</groupId>
+                <artifactId>junit</artifactId>
+                <version>4.12</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.poi</groupId>
+                <artifactId>poi-ooxml</artifactId>
+                <version>3.14</version>
             </dependency>
 
         </dependencies>
     </dependencyManagement>
 
-    <!--Profiling-->
 
-    <!--<profiles>-->
-        <!--<profile>-->
-            <!--<id>amazon-app</id>-->
-            <!--<modules>-->
-                <!--<module>Generic</module>-->
-                <!--<module>Amazon</module>-->
-            <!--</modules>-->
-        <!--</profile>-->
-        <!--<profile>-->
-            <!--<id>cnn-app</id>-->
-            <!--<modules>-->
-                <!--<module>Generic</module>-->
-                <!--<module>Cnn</module>-->
-            <!--</modules>-->
-        <!--</profile>-->
-        <!--<profile>-->
-            <!--<id>NyTimes-app</id>-->
-            <!--<modules>-->
-                <!--<module>Generic</module>-->
-                <!--<module>NYTimes</module>-->
-            <!--</modules>-->
-        <!--</profile>-->
-        <!--<profile>-->
-            <!--<id>default</id>-->
-            <!--<activation>-->
-                <!--<jdk>1.8</jdk>-->
-            <!--</activation>-->
-            <!--<modules>-->
-                <!--<module>Generic</module>-->
-                <!--<module>Amazon</module>-->
-                <!--<module>Cnn</module>-->
-                <!--<module>NYTimes</module>-->
-            <!--</modules>-->
-        <!--</profile>-->
-    <!--</profiles>-->
 
     <profiles>
         <profile>
@@ -132,13 +112,7 @@
                 <module>BBB</module>
             </modules>
         </profile>
-        <profile>
-            <id>Chase-Module</id>
-            <modules>
-                <module>Generic</module>
-                <module>Chase</module>
-            </modules>
-        </profile>
+
         <profile>
             <id>tarikuz-Module</id>
             <modules>
@@ -156,9 +130,9 @@
                 <module>Generic</module>
                 <module>Castle</module>
                 <module>BBB</module>
-                <module>Chase</module>
-<!--                 <module>Tarikuz</module>
- -->            </modules>
+
+                <!--<module>Tarikuz</module>-->
+            </modules>
         </profile>
     </profiles>
 </project>

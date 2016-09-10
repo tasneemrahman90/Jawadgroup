@@ -1,13 +1,14 @@
-package Craigslist;
+/*package Craigslist;
 
+import Common.Base;
+import tarikBase.Core;
 import com.sun.tools.javac.comp.Enter;
 import org.omg.PortableServer.ThreadPolicyValue;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import tarikBase.Core;
 /**
  * Created by tzaman on 9/3/16.
- */
+
 public class LogIn extends Core {
 
     @Test
@@ -21,4 +22,33 @@ public class LogIn extends Core {
         //takeEnterKeys(".//*[@id='pagecontainer']/section/div/div[1]/form/div[3]/button");
         Thread.sleep(2000);
     }
+}*/
+
+package Craigslist;
+
+import Common.Base;
+import org.openqa.selenium.support.PageFactory;
+import org.testng.annotations.Test;
+import data.Search;
+import tarikBase.Users;
+
+/**
+ * Created by PlayBoy on 9/8/16.
+ */
+public class LogIn extends Base{
+    @Test
+    public void signIn() throws InterruptedException {
+
+        Users users = PageFactory.initElements(driver, Users.class);
+
+        users.clickSignInAtHome();
+        /*users.inputEmail("jfarsin@yahoo.com");
+        users.inputPassword("password");
+        users.clickSignInAtLoginPage();*/
+
+        sleepFor(5);
+
+
+    }
+
 }

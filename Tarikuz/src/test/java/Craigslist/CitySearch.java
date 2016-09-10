@@ -1,8 +1,9 @@
 package Craigslist;
 
+import Common.Base;
+import tarikBase.Core;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import tarikBase.Core;
 
 /**
  * Created by tzaman on 9/3/16.
@@ -10,7 +11,7 @@ import tarikBase.Core;
 public class CitySearch extends Core {
 
     @Test
-    public void test() throws InterruptedException{
+    public void test() throws InterruptedException {
         //redirect to Craigslist cities
         driver.findElement(By.xpath(".//*[@id='logo']/a")).click();
         //looking for New york

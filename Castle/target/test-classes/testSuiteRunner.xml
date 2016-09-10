@@ -14,21 +14,22 @@
 <test name = "Castle castle.Search">
     <classes>
 
-        <class name="castle.Privacy"/>
-        <class name="castle.Search"/>
+        <!--<class name="castle.Privacy"/>-->
+        <!--<class name="castle.Search"/>-->
 
 
-        <class name="ebay.Search"/>
+        <!--<class name="ebay.Search"/>-->
         <!--<class name="ebay.Register"/>-->
-        <class name="ebay.SignIn"/>
+        <!--<class name="ebay.SignIn"/>-->
         <!--<class name="ebay.AppleMusic"/>-->
 
 
         <!--<class name="bestBuy.SearchBestBuy"/>-->
         <!--<class name="bestBuy.Services"/>-->
-        <class name="bestBuy.Freshdirect"/>
+        <!--<class name="bestBuy.Freshdirect"/>-->
         <!--<class name="bestBuy.SignIn"/>-->
         <!--<class name="bestBuy.Products"/>-->
+        <class name="amazon.Search"/>
 
     </classes>
 

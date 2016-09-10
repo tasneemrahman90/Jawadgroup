@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
  * Created by Zaqc on 8/31/2016.
  */
 public class Mail extends Base{
-//    @Test
+    @Test
     public void signUpForMail()throws InterruptedException{
 
         clickByXpath(".//*[@id='promoArea']/ul/li[2]/a");

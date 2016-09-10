@@ -1,9 +1,10 @@
 package Craigslist;
 
+import Common.Base;
+import tarikBase.Core;
 import org.omg.PortableServer.ThreadPolicyValue;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import tarikBase.Core;
 
 /**
  * Created by tzaman on 9/1/16.

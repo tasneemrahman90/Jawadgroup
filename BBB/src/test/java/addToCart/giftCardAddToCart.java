@@ -1,8 +1,7 @@
 package addToCart;
 
 import Common.Base;
-import core.GiftCardWishes;
-import core.ItemsToBeSearched;
+import core.GiftCardInput;
 import core.SearchItems;
 import org.openqa.selenium.By;
 import org.openqa.selenium.support.PageFactory;
@@ -25,7 +24,7 @@ public class giftCardAddToCart extends Base {
         driver.navigate().to("https://bedbathandbeyond.cashstar.com/");
 
         SearchItems search = PageFactory.initElements(driver, SearchItems.class);
-        GiftCardWishes wishes = new GiftCardWishes();
+        GiftCardInput wishes = new GiftCardInput();
 
         driver.findElement(By.xpath(".//*[@id='message']")).sendKeys(wishes.getWish());
         clickByXpath(".//*[@id='img_DD48GRTP8']");
@@ -42,7 +41,7 @@ public class giftCardAddToCart extends Base {
 //        //initialize Search page factory
 //        SearchItems search = PageFactory.initElements(driver, SearchItems.class);
 //        //Read search.data from excel file
-//        GiftCardWishes wishes = new GiftCardWishes();
+//        GiftCardInput wishes = new GiftCardInput();
 //        String[] value = wishes.getWish();
 //        for (String read : value) {
 //            search.searchFor(read);

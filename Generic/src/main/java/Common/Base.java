@@ -18,6 +18,7 @@ import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+import utility.DataRead;
 
 import java.io.File;
 import java.io.IOException;
@@ -29,7 +30,7 @@ import java.util.concurrent.TimeUnit;
 /**
  * Created by PlayBoy on 8/30/16.
  */
-public class Base {
+public class Base{
 
     public WebDriver driver = null;
     //    public static Logger logger = LogManager.getLogger(Base.class);
@@ -243,7 +244,7 @@ public class Base {
 
     // scrolling Down
     public void scrollPageDown(){
-        ((JavascriptExecutor) driver).executeScript("scroll(0,200)");
+        ((JavascriptExecutor) driver).executeScript("scroll(0,400)");
     }
     public void scrollToElementById(String locator){
         WebElement element = driver.findElement(By.cssSelector(locator));
@@ -321,6 +322,13 @@ public class Base {
     public void keysInput(String locator){
         driver.findElement(By.cssSelector(locator)).sendKeys(Keys.ENTER);
     }
+
+
+
+
+
+    //Global Variables
+
 
 
 }

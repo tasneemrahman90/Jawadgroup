@@ -11,7 +11,7 @@ import java.util.List;
  * Created by Zaqc on 8/31/2016.
  */
 public class InProductsTxt extends Base  {
-    @Test
+//    @Test
     public void getProductsTxt() throws InterruptedException {
         clickByXpath(".//*[@id='collegeBridalArea']/div[1]/a");
         List<String> list = new ArrayList<String>(14);

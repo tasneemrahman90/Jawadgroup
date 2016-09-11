@@ -18,7 +18,7 @@
         </classes>
     </test>
 
-    <test name = "Bed Bath And Beyond Gift Card castle.Search">
+    <!-- <test name = "Bed Bath And Beyond Gift Card castle.Search">
         <classes>
             <class name="giftCardsearch.GiftCard"/>
         </classes>
@@ -77,5 +77,5 @@
         <classes>
             <class name="readingFromFile.Items"/>
         </classes>
-    </test>
+    </test> -->
 </suite>

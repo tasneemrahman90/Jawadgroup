@@ -7,8 +7,8 @@
 <parameter name="userName" value="jawad083"/>
 <parameter name="accessKey" value="9c614a02-865d-4af6-b227-346f89ef0f84"/>
 <parameter name="os" value="mac"/>
-<parameter name="browserName" value="phantomjs"/>
-<parameter name="browserVersion" value="1.3"/>
+<parameter name="browserName" value="firefox"/>
+<parameter name="browserVersion" value="47.0"/>
 <parameter name="url" value="http://www.castle.com/"/>
 
 <test name = "Castle castle.Search">

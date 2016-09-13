@@ -1,5 +1,7 @@
 package Common;
 
+import atu.testrecorder.ATUTestRecorder;
+import atu.testrecorder.exceptions.ATUTestRecorderException;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.*;
@@ -35,6 +37,7 @@ import java.util.concurrent.TimeUnit;
  * Created by PlayBoy on 8/30/16.
  */
 public class Base{
+    public ATUTestRecorder recorder = null;
 
     public WebDriver driver = null;
     //    public static Logger logger = LogManager.getLogger(Base.class);
@@ -311,6 +314,17 @@ public class Base{
         Date date = new Date();
         FileUtils.copyFile(scrFile, new File("TestoutputData/Screenshots/" + fileName + "_" + dateFormat.format(date) + ".png"));
     }
+    //Taking screen videos
+    public void screenCastStart(String fileName) throws ATUTestRecorderException {
+        DateFormat dateFormat = new SimpleDateFormat("yy-mm-dd HH-mm-ss");
+        Date date = new Date();
+        recorder  = new ATUTestRecorder("TestOutputData/ScreenCasts/", fileName + "_" + dateFormat.format(date), false);
+        recorder.start();
+    }
+
+    public void screenCastStop() throws ATUTestRecorderException { recorder.stop();}
+
+
     //Synchronization
     public void waitUntilClickAble(By locator){
         WebDriverWait wait = new WebDriverWait(driver, 10);

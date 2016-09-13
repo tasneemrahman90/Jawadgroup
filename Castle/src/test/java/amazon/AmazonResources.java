@@ -25,18 +25,8 @@ public class AmazonResources extends Base {
             clearInput(SearchBoxLocator);
             typeByCssNEnter(SearchBoxLocator,dr.getCellData(SheetName, ColumnName,i));
             sleepFor(2);
+            takeScreenshot("AmazonSearch");
             dr.setCellData(SheetName,WriteColumnName,i, driver.getTitle());
         }
     }
-  //  public void getAllLinkS(String URL) {
-//        driver.get(URL);
-//
-//        java.util.List<WebElement> links = driver.findElements(By.tagName("a"));
-//        System.out.println(links.size());
-//        for (int i = 1; i <= links.size(); i = i + 1) {
-//            System.out.println(links.get(i).getText());
-//        }
-//
-//    }
-
 }

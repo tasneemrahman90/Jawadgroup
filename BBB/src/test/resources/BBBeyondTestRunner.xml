@@ -7,18 +7,18 @@
     <parameter name="useCloudEnv" value="false"/>
     <parameter name="userName" value="DimitarMilevskiPNT"/>
     <parameter name="accessKey" value= "806b9c37-3173-41da-adf3-114ccd386fe4"/>
-    <parameter name="os" value="mac"/>
-    <parameter name="browserName" value="chrome"/>
-    <parameter name="browserVersion" value="47.0"/>
+    <parameter name="os" value="windows"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="47.0.1"/>
     <parameter name="url" value="http://www.bedbathandbeyond.com"/>
 <!--firefox -48-->
-    <test name = "Bed Bath And Beyond castle.Search">
+    <test name = "Bed Bath And Beyond Search">
         <classes>
             <class name="search.SearchContent"/>
         </classes>
     </test>
 
-    <!-- <test name = "Bed Bath And Beyond Gift Card castle.Search">
+    <test name = "Bed Bath And Beyond Gift Card Search">
         <classes>
             <class name="giftCardsearch.GiftCard"/>
         </classes>
@@ -26,7 +26,7 @@
 
     <test name = "BBB Gift Card Add To Card">
         <classes>
-            <class name="addToCart.giftCardAddToCart"/>
+            <class name="addToCart.giftCardReadFile"/>
         </classes>
     </test>
 
@@ -77,5 +77,5 @@
         <classes>
             <class name="readingFromFile.Items"/>
         </classes>
-    </test> -->
+    </test>
 </suite>

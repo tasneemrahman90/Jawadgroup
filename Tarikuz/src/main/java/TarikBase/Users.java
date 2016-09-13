@@ -1,4 +1,4 @@
-package tarikBase;
+package TarikBase;
 
 /**
  * Created by tzaman on 9/9/16.

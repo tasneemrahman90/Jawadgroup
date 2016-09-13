@@ -1,4 +1,4 @@
-package tarikBase;
+package TarikBase;
 
 import Common.Base;
 

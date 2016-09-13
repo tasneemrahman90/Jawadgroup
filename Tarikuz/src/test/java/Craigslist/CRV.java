@@ -1,7 +1,7 @@
 package Craigslist;
 
 import Common.Base;
-import tarikBase.Core;
+import TarikBase.Core;
 import org.omg.PortableServer.ThreadPolicyValue;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;

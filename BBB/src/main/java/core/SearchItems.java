@@ -15,6 +15,8 @@ public class SearchItems {
     @FindBy(how = How.CSS, using = ".nav-input")
     public static WebElement searchSubmit ;
 
+
+
     public void searchFor(String item){
         searchInput.sendKeys(item, Keys.ENTER);
     }

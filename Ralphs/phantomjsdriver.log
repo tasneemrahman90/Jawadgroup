@@ -1,0 +1,68 @@
+[INFO  - 2016-09-13T08:29:07.259Z] GhostDriver - Main - running on port 35197
+[INFO  - 2016-09-13T08:29:08.012Z] Session [238acc60-798c-11e6-9120-9d45d4ea18a1] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-09-13T08:29:08.012Z] Session [238acc60-798c-11e6-9120-9d45d4ea18a1] - page.customHeaders:  - {}
+[INFO  - 2016-09-13T08:29:08.012Z] Session [238acc60-798c-11e6-9120-9d45d4ea18a1] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-10.11 (El Capitan)-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-09-13T08:29:08.012Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 238acc60-798c-11e6-9120-9d45d4ea18a1
+[ERROR - 2016-09-13T08:29:12.112Z] Session [238acc60-798c-11e6-9120-9d45d4ea18a1] - page.onError - msg: Error: [$resource:badcfg] Error in resource configuration for action `query`. Expected response to contain an array but got an object (Request: GET /content/1572019bb28)
+http://errors.angularjs.org/1.4.6/$resource/badcfg?p0=query&p1=array&p2=object&p3=GET&p4=%2Fcontent%2F1572019bb28
+https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular-resource.js:597:99
+processQueue@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:14678:30
+https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:14694:39
+$eval@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:15922:28
+$digest@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:15733:36
+$apply@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:16030:31
+done@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:10545:53
+completeRequest@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:10717:15
+requestLoaded@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:10658:24
+f@https://www.ralphs.com/dtagent638_23gqrx_1016.js:113:73
+https://www.ralphs.com/dtagent638_23gqrx_1016.js:113:279
+[ERROR - 2016-09-13T08:29:12.113Z] Session [238acc60-798c-11e6-9120-9d45d4ea18a1] - page.onError - stack:
+  (anonymous function) (https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:12450)
+[ERROR - 2016-09-13T08:29:12.658Z] Session [238acc60-798c-11e6-9120-9d45d4ea18a1] - page.onError - msg: TypeError: null is not an object (evaluating 'e.match(/(OS X )([0-9_\.]*)/)[2]')
+[ERROR - 2016-09-13T08:29:12.658Z] Session [238acc60-798c-11e6-9120-9d45d4ea18a1] - page.onError - stack:
+  d (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+  clientInfo (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+  sendPageInfo (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+[ERROR - 2016-09-13T08:29:12.658Z] Session [238acc60-798c-11e6-9120-9d45d4ea18a1] - page.onError - msg: TypeError: JSON.stringify cannot serialize cyclic structures.
+[ERROR - 2016-09-13T08:29:12.658Z] Session [238acc60-798c-11e6-9120-9d45d4ea18a1] - page.onError - stack:
+  stringify (https://www.ralphs.com/static/ga82cabf/javascript/seamless.js:4)
+  stringify (https://www.ralphs.com/static/ga82cabf/javascript/seamless.js:4)
+  _sendEchoMessage (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+  sendMessage (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+  error (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+  _handleError (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+[INFO  - 2016-09-13T08:29:18.335Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2016-09-13T20:09:38.093Z] GhostDriver - Main - running on port 25491
+[INFO  - 2016-09-13T20:09:38.352Z] Session [ff93b8a0-79ed-11e6-a446-d3246318a3c1] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-09-13T20:09:38.352Z] Session [ff93b8a0-79ed-11e6-a446-d3246318a3c1] - page.customHeaders:  - {}
+[INFO  - 2016-09-13T20:09:38.352Z] Session [ff93b8a0-79ed-11e6-a446-d3246318a3c1] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"mac-10.11 (El Capitan)-64bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-09-13T20:09:38.352Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: ff93b8a0-79ed-11e6-a446-d3246318a3c1
+[ERROR - 2016-09-13T20:09:42.793Z] Session [ff93b8a0-79ed-11e6-a446-d3246318a3c1] - page.onError - msg: Error: [$resource:badcfg] Error in resource configuration for action `query`. Expected response to contain an array but got an object (Request: GET /content/15725148c4a)
+http://errors.angularjs.org/1.4.6/$resource/badcfg?p0=query&p1=array&p2=object&p3=GET&p4=%2Fcontent%2F15725148c4a
+https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular-resource.js:597:99
+processQueue@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:14678:30
+https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:14694:39
+$eval@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:15922:28
+$digest@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:15733:36
+$apply@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:16030:31
+done@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:10545:53
+completeRequest@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:10717:15
+requestLoaded@https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:10658:24
+f@https://www.ralphs.com/dtagent638_23gqrx_1016.js:113:73
+https://www.ralphs.com/dtagent638_23gqrx_1016.js:113:279
+[ERROR - 2016-09-13T20:09:42.793Z] Session [ff93b8a0-79ed-11e6-a446-d3246318a3c1] - page.onError - stack:
+  (anonymous function) (https://www.ralphs.com/static/ga82cabf/javascript/vendor/angular/angular.js:12450)
+[ERROR - 2016-09-13T20:09:43.332Z] Session [ff93b8a0-79ed-11e6-a446-d3246318a3c1] - page.onError - msg: TypeError: null is not an object (evaluating 'e.match(/(OS X )([0-9_\.]*)/)[2]')
+[ERROR - 2016-09-13T20:09:43.333Z] Session [ff93b8a0-79ed-11e6-a446-d3246318a3c1] - page.onError - stack:
+  d (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+  clientInfo (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+  sendPageInfo (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+[ERROR - 2016-09-13T20:09:43.333Z] Session [ff93b8a0-79ed-11e6-a446-d3246318a3c1] - page.onError - msg: TypeError: JSON.stringify cannot serialize cyclic structures.
+[ERROR - 2016-09-13T20:09:43.333Z] Session [ff93b8a0-79ed-11e6-a446-d3246318a3c1] - page.onError - stack:
+  stringify (https://www.ralphs.com/static/ga82cabf/javascript/seamless.js:4)
+  stringify (https://www.ralphs.com/static/ga82cabf/javascript/seamless.js:4)
+  _sendEchoMessage (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+  sendMessage (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+  error (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+  _handleError (https://www.ralphs.com/static/javascript/source/echoC2/c2.min.js:1)
+[INFO  - 2016-09-13T20:09:49.197Z] ShutdownReqHand - _handle - About to shutdown

@@ -27,10 +27,11 @@ public class LogIn extends Core {
 package Craigslist;
 
 import Common.Base;
+import TarikBase.Users;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Test;
 import data.Search;
-import tarikBase.Users;
+
 
 /**
  * Created by PlayBoy on 9/8/16.
@@ -39,7 +40,7 @@ public class LogIn extends Base{
     @Test
     public void signIn() throws InterruptedException {
 
-        Users users = PageFactory.initElements(driver, Users.class);
+        Users users = PageFactory.initElements(driver,Users.class);
 
         users.clickSignInAtHome();
         /*users.inputEmail("jfarsin@yahoo.com");

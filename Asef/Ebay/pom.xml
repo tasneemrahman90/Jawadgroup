@@ -12,7 +12,7 @@
     <artifactId>com.ebay</artifactId>
     <dependencies>
         <dependency>
-            <groupId>WebApp-Automation</groupId>
+            <groupId>TeamCFramework</groupId>
             <artifactId>Generic</artifactId>
             <version>1.0-SNAPSHOT</version>
         </dependency>

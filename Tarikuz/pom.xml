@@ -16,7 +16,6 @@
             <groupId>TeamCFramework</groupId>
             <artifactId>Generic</artifactId>
             <version>1.0-SNAPSHOT</version>
-
         </dependency>
     </dependencies>
 

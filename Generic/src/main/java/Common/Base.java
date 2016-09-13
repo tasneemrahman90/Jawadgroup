@@ -8,6 +8,7 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.htmlunit.HtmlUnitDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.phantomjs.PhantomJSDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.remote.RemoteWebDriver;
 import org.openqa.selenium.safari.SafariDriver;
@@ -23,7 +24,10 @@ import utility.DataRead;
 import java.io.File;
 import java.io.IOException;
 import java.net.URL;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
@@ -38,7 +42,7 @@ public class Base{
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("rahmanww") String userName, @Optional("")
             String accessKey, @Optional("Windows 8") String os, @Optional("firefox") String browserName, @Optional("34")
-                              String browserVersion, @Optional("http://www.google.com") String url)throws IOException {
+                              String browserVersion, @Optional("http://www.google.com") String url)throws IOException, NullPointerException {
         BasicConfigurator.configure();
         if(useCloudEnv==true){
             //run in cloud
@@ -73,7 +77,16 @@ public class Base{
             System.setProperty("webdriver.ie.driver","..\\Generic\\selenium-browser-driver\\IEDriverServer.exe");
             driver = new InternetExplorerDriver();
         }else if(browserName.equalsIgnoreCase("htmlunit")){
-            driver = new HtmlUnitDriver();
+            //By passing the TRUE parameter, we are enabling JS capabilities.
+            driver = new HtmlUnitDriver(true);
+        }else if(browserName.equalsIgnoreCase("phantomJS")) {
+            if(os.equalsIgnoreCase("windows")){
+                System.setProperty("phantomjs.binary.path","..\\Generic\\selenium-browser-driver\\phantomjs.exe" );
+            }
+            else {
+                System.setProperty("phantomjs.binary.path", "../Generic/selenium-browser-driver/phantomjs");
+            }
+            driver = new PhantomJSDriver();
         }
 
         return driver;
@@ -107,8 +120,17 @@ public class Base{
     }
     @AfterMethod
     public void cleanUp(){
-        driver.close();
-        driver.quit();
+        try
+        {
+            driver.quit();
+            //Runtime.getRuntime().exec("taskkill /F /IM IEDriverServer.exe");
+        }
+        catch (Exception anException)
+        {
+            anException.printStackTrace();
+        }
+//        driver.close();
+//        driver.quit();
     }
 
     public void clickByCss(String locator) {
@@ -282,10 +304,12 @@ public class Base{
         driver.switchTo().frame(element);
     }
 
-    //Taking Screen shots
-    public void takeScreenShot()throws IOException {
-        File file = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-        FileUtils.copyFile(file,new File("screenShots.png"));
+    //Taking Screen shots on TestoutputData/Screenshots directory
+    public void takeScreenshot(String fileName) throws IOException {
+        File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+        DateFormat dateFormat = new SimpleDateFormat("yy-mm-dd HH-mm-ss");
+        Date date = new Date();
+        FileUtils.copyFile(scrFile, new File("TestoutputData/Screenshots/" + fileName + "_" + dateFormat.format(date) + ".png"));
     }
     //Synchronization
     public void waitUntilClickAble(By locator){

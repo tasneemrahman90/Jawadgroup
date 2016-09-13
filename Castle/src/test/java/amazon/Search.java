@@ -16,6 +16,5 @@ public class Search  extends AmazonResources {
 
         navigateTo(url);
         getTitleSearch(amazonSearchBox, SuiteExcelFile, SheetName, ReadColumnName, WrColumnName );
-
     }
 }

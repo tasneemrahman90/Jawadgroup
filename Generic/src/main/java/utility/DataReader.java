@@ -50,10 +50,10 @@ public class DataReader {
         sheet = wb.getSheetAt(0);
         numberOfRows = sheet.getLastRowNum();
         numberOfCol =  sheet.getRow(0).getLastCellNum();
-        data = new String[numberOfRows+1];
+        data = new String[numberOfRows];
 
-        for(int i=1; i<data.length; i++){
-            HSSFRow rows = sheet.getRow(i);
+        for(int i=0; i<data.length; i++){
+            HSSFRow rows = sheet.getRow(i+1);
             for(int j=0; j<numberOfCol; j++){
                 HSSFCell cell = rows.getCell(j);
                 String cellData = getCellValue(cell);

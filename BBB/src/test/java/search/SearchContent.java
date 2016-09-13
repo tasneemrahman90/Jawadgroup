@@ -3,13 +3,12 @@ package search;
 import Common.Base;
 import org.testng.annotations.Test;
 
-
 /**
  * Created by Zaqc on 8/24/2016.
  */
 public class SearchContent extends Base {
 
-    @Test
+ //   @Test
     public void SearchContent(){
 
         clickByXpath(".//*[@id='globalSearchForm']/div[1]/a");

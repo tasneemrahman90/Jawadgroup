@@ -17,10 +17,7 @@ import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.AfterMethod;
-import org.testng.annotations.BeforeMethod;
-import org.testng.annotations.Optional;
-import org.testng.annotations.Parameters;
+import org.testng.annotations.*;
 import utility.DataRead;
 
 import java.io.File;
@@ -41,11 +38,11 @@ public class Base{
 
     public WebDriver driver = null;
     //    public static Logger logger = LogManager.getLogger(Base.class);
-    @Parameters({"useCloudEnv","userName","accessKey","os","browserName","browserVersion","url"})
+    @Parameters({"useCloudEnv","userName","accessKey","os","browserName","browserVersion","url", "screenCastValue"})
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("rahmanww") String userName, @Optional("")
             String accessKey, @Optional("Windows 8") String os, @Optional("firefox") String browserName, @Optional("34")
-                              String browserVersion, @Optional("http://www.google.com") String url)throws IOException, NullPointerException {
+                              String browserVersion, @Optional("http://www.google.com") String url, @Optional("false") boolean screenCastValue) throws IOException, NullPointerException, ATUTestRecorderException {
         BasicConfigurator.configure();
         if(useCloudEnv==true){
             //run in cloud
@@ -57,18 +54,17 @@ public class Base{
             getLocalDriver(os, browserName);
 //            logger.info("Test is running on Local");
         }
-
         driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
         driver.get(url);
         driver.manage().window().maximize();
 
     }
-    public WebDriver getLocalDriver(String os, String browserName){
+    public WebDriver getLocalDriver(String osx, String browserName){
 
         if(browserName.equalsIgnoreCase("firefox")){
             driver = new FirefoxDriver();
         }else if(browserName.equalsIgnoreCase("chrome")){
-            if(os.equalsIgnoreCase("windows")){
+            if(osx.equalsIgnoreCase("windows")){
                 System.setProperty("webdriver.chrome.driver","..\\Generic\\selenium-browser-driver\\chromedriver.exe");
             }else{
                 System.setProperty("webdriver.chrome.driver", "../Generic/selenium-browser-driver/chromedriver");
@@ -83,7 +79,7 @@ public class Base{
             //By passing the TRUE parameter, we are enabling JS capabilities.
             driver = new HtmlUnitDriver(true);
         }else if(browserName.equalsIgnoreCase("phantomJS")) {
-            if(os.equalsIgnoreCase("windows")){
+            if(osx.equalsIgnoreCase("windows")){
                 System.setProperty("phantomjs.binary.path","..\\Generic\\selenium-browser-driver\\phantomjs.exe" );
             }
             else {
@@ -120,6 +116,26 @@ public class Base{
                 "@ondemand.saucelabs.com:80/wd/hub"), cap);
         return driver;
     }
+    }
+    @Parameters({"screenCastValue", "screenCastName"})
+    @BeforeTest
+    public void useScreenCast(@Optional("false") boolean screenCastValue, @Optional ("TC") String screenCastName)throws ATUTestRecorderException {
+        if(screenCastValue==true){
+            screenCastStart(screenCastName);
+        }
+        else {
+            System.out.println("NOt using");
+        }
+    }
+    @Parameters({"screenCastValue"})
+    @AfterTest
+    public void stopScreenCast(@Optional("false") boolean screenCastValue)throws ATUTestRecorderException {
+        if(screenCastValue==true){
+            screenCastStop();
+        }
+        else {
+            System.out.println("NOt using");
+        }
     }
     @AfterMethod
     public void cleanUp(){
@@ -315,14 +331,20 @@ public class Base{
         FileUtils.copyFile(scrFile, new File("TestoutputData/Screenshots/" + fileName + "_" + dateFormat.format(date) + ".png"));
     }
     //Taking screen videos
+
     public void screenCastStart(String fileName) throws ATUTestRecorderException {
-        DateFormat dateFormat = new SimpleDateFormat("yy-mm-dd HH-mm-ss");
-        Date date = new Date();
-        recorder  = new ATUTestRecorder("TestOutputData/ScreenCasts/", fileName + "_" + dateFormat.format(date), false);
-        recorder.start();
+
+            //run with recorder
+            DateFormat dateFormat = new SimpleDateFormat("yy-mm-dd HH-mm-ss");
+            Date date = new Date();
+            recorder = new ATUTestRecorder("TestOutputData/ScreenCasts/", fileName + "_" + dateFormat.format(date), false);
+            recorder.start();
     }
 
-    public void screenCastStop() throws ATUTestRecorderException { recorder.stop();}
+    public void screenCastStop() throws ATUTestRecorderException {
+            recorder.stop();
+    }
+
 
 
     //Synchronization

@@ -8,6 +8,8 @@
     <parameter name="browserName" value="phantomJs"/>
     <parameter name="browserVersion" value="2.23"/>
     <parameter name="url" value="https://www.ralphs.com/"/>
+    <parameter name="screenCastValue" value="false"/>
+    <parameter name="screenCastName" value="Ralphs"/>
 
     <test name = "Ralphs search">
         <classes>

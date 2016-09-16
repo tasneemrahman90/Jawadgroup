@@ -1,0 +1,83 @@
+[INFO  - 2016-09-14T03:04:44.542Z] GhostDriver - Main - running on port 19494
+[INFO  - 2016-09-14T03:04:45.101Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-09-14T03:04:45.102Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.customHeaders:  - {}
+[INFO  - 2016-09-14T03:04:45.102Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-09-14T03:04:45.102Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: fd26a3e0-7a27-11e6-826f-89b58e179ca2
+[ERROR - 2016-09-14T03:04:59.880Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-14T03:04:59.880Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[ERROR - 2016-09-14T03:05:00.086Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.onError - msg: Error: Failed to load Player Technology
+[ERROR - 2016-09-14T03:05:00.087Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.onError - stack:
+  loadPlayer (http://d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.7.24-min.js:16)
+  initialize (http://d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.7.24-min.js:16)
+  initialize (http://d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.7.24-min.js:18)
+  j (http://d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.7.24-min.js:18)
+  (anonymous function) (http://www-stage-embed-bbb-com.netlify.com/script-lbp/assets-dist/js/script-lbp.min.js:24)
+  n (http://www.bedbathandbeyond.com/_assets/global/js/jquery-1.7.1.min.js?v=20160829140551ce1458dDC2:2)
+  fireWith (http://www.bedbathandbeyond.com/_assets/global/js/jquery-1.7.1.min.js?v=20160829140551ce1458dDC2:2)
+  w (http://www.bedbathandbeyond.com/_assets/global/js/jquery-1.7.1.min.js?v=20160829140551ce1458dDC2:4)
+  onreadystatechange (http://www.bedbathandbeyond.com/_assets/global/js/jquery-1.7.1.min.js?v=20160829140551ce1458dDC2:4)
+[ERROR - 2016-09-14T03:05:00.858Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-14T03:05:00.859Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[ERROR - 2016-09-14T03:05:11.461Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-14T03:05:11.462Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[INFO  - 2016-09-14T03:05:12.295Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-09-14T03:05:12.295Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.customHeaders:  - {}
+[ERROR - 2016-09-14T03:05:12.516Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-14T03:05:12.516Z] Session [fd26a3e0-7a27-11e6-826f-89b58e179ca2] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[INFO  - 2016-09-14T03:05:55.545Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2016-09-14T03:06:51.409Z] GhostDriver - Main - running on port 14987
+[INFO  - 2016-09-14T03:06:52.527Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-09-14T03:06:52.527Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.customHeaders:  - {}
+[INFO  - 2016-09-14T03:06:52.527Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-09-14T03:06:52.528Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 491a4e00-7a28-11e6-8a2a-2378d3509c17
+[ERROR - 2016-09-14T03:07:14.356Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-14T03:07:14.356Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[ERROR - 2016-09-14T03:07:15.019Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-14T03:07:15.020Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[ERROR - 2016-09-14T03:07:21.346Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-14T03:07:21.347Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[INFO  - 2016-09-14T03:07:22.167Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-09-14T03:07:22.167Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.customHeaders:  - {}
+[ERROR - 2016-09-14T03:07:23.220Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-14T03:07:23.220Z] Session [491a4e00-7a28-11e6-8a2a-2378d3509c17] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[INFO  - 2016-09-14T03:08:03.103Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2016-09-15T03:24:56.139Z] GhostDriver - Main - running on port 46552
+[INFO  - 2016-09-15T03:24:56.769Z] Session [f9c66830-7af3-11e6-943a-a9f992ca0afe] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-09-15T03:24:56.769Z] Session [f9c66830-7af3-11e6-943a-a9f992ca0afe] - page.customHeaders:  - {}
+[INFO  - 2016-09-15T03:24:56.769Z] Session [f9c66830-7af3-11e6-943a-a9f992ca0afe] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-09-15T03:24:56.769Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: f9c66830-7af3-11e6-943a-a9f992ca0afe
+[ERROR - 2016-09-15T03:25:02.853Z] Session [f9c66830-7af3-11e6-943a-a9f992ca0afe] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-15T03:25:02.853Z] Session [f9c66830-7af3-11e6-943a-a9f992ca0afe] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[INFO  - 2016-09-15T03:25:14.740Z] ShutdownReqHand - _handle - About to shutdown
+[INFO  - 2016-09-15T03:32:54.336Z] GhostDriver - Main - running on port 42742
+[INFO  - 2016-09-15T03:32:54.937Z] Session [16c90db0-7af5-11e6-aaa8-a32385a439d0] - page.settings - {"XSSAuditingEnabled":false,"javascriptCanCloseWindows":true,"javascriptCanOpenWindows":true,"javascriptEnabled":true,"loadImages":true,"localToRemoteUrlAccessEnabled":false,"userAgent":"Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/538.1 (KHTML, like Gecko) PhantomJS/2.1.1 Safari/538.1","webSecurityEnabled":true}
+[INFO  - 2016-09-15T03:32:54.938Z] Session [16c90db0-7af5-11e6-aaa8-a32385a439d0] - page.customHeaders:  - {}
+[INFO  - 2016-09-15T03:32:54.938Z] Session [16c90db0-7af5-11e6-aaa8-a32385a439d0] - Session.negotiatedCapabilities - {"browserName":"phantomjs","version":"2.1.1","driverName":"ghostdriver","driverVersion":"1.2.0","platform":"windows-7-32bit","javascriptEnabled":true,"takesScreenshot":true,"handlesAlerts":false,"databaseEnabled":false,"locationContextEnabled":false,"applicationCacheEnabled":false,"browserConnectionEnabled":false,"cssSelectorsEnabled":true,"webStorageEnabled":false,"rotatable":false,"acceptSslCerts":false,"nativeEvents":true,"proxy":{"proxyType":"direct"}}
+[INFO  - 2016-09-15T03:32:54.938Z] SessionManagerReqHand - _postNewSessionCommand - New Session Created: 16c90db0-7af5-11e6-aaa8-a32385a439d0
+[ERROR - 2016-09-15T03:33:07.233Z] Session [16c90db0-7af5-11e6-aaa8-a32385a439d0] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-15T03:33:07.234Z] Session [16c90db0-7af5-11e6-aaa8-a32385a439d0] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[ERROR - 2016-09-15T03:33:08.917Z] Session [16c90db0-7af5-11e6-aaa8-a32385a439d0] - page.onError - msg: Error: Failed to load Player Technology
+[ERROR - 2016-09-15T03:33:08.917Z] Session [16c90db0-7af5-11e6-aaa8-a32385a439d0] - page.onError - stack:
+  loadPlayer (http://d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.7.24-min.js:16)
+  initialize (http://d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.7.24-min.js:16)
+  initialize (http://d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.7.24-min.js:18)
+  j (http://d2kmhr1caomykv.cloudfront.net/player/assets/tvp/tvp-1.7.24-min.js:18)
+  (anonymous function) (http://www-stage-embed-bbb-com.netlify.com/script-lbp/assets-dist/js/script-lbp.min.js:24)
+  n (http://www.bedbathandbeyond.com/_assets/global/js/jquery-1.7.1.min.js?v=20160829140551ce1458dDC2:2)
+  fireWith (http://www.bedbathandbeyond.com/_assets/global/js/jquery-1.7.1.min.js?v=20160829140551ce1458dDC2:2)
+  w (http://www.bedbathandbeyond.com/_assets/global/js/jquery-1.7.1.min.js?v=20160829140551ce1458dDC2:4)
+  onreadystatechange (http://www.bedbathandbeyond.com/_assets/global/js/jquery-1.7.1.min.js?v=20160829140551ce1458dDC2:4)
+[ERROR - 2016-09-15T03:33:09.414Z] Session [16c90db0-7af5-11e6-aaa8-a32385a439d0] - page.onError - msg: Facebook Pixel Error: Duplicate Pixel ID: 1633745803513411
+[ERROR - 2016-09-15T03:33:09.414Z] Session [16c90db0-7af5-11e6-aaa8-a32385a439d0] - page.onError - stack:
+  gb (http://connect.facebook.net/en_US/fbevents.js:9)
+[INFO  - 2016-09-15T03:33:16.404Z] ShutdownReqHand - _handle - About to shutdown

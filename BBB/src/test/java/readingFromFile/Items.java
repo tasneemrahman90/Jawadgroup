@@ -12,7 +12,8 @@ import java.io.IOException;
  * Created by Zaqc on 9/1/2016.
  */
 public class Items extends Base {
-//    @Test
+
+   @Test
     public void searchUsingExcelFile() throws IOException, InterruptedException {
         //initialize Search page factory
         SearchItems search = PageFactory.initElements(driver, SearchItems.class);
@@ -21,8 +22,12 @@ public class Items extends Base {
         String[] value = itemsToBeSearched.getData();
         for (String read : value) {
             search.searchFor(read);
-            sleepFor(2);
+            sleepFor(5);
+           // takeScreenshot("BBB");
             search.clearSearchInput();
         }
     }
 }
+
+
+

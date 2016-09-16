@@ -9,9 +9,9 @@
     <parameter name="os" value="mac"/>
     <parameter name="browserName" value="firefox"/>
     <parameter name="browserVersion" value="47.0"/>
-    <parameter name="url" value="http://www.castle.com/"/>
-    <parameter name="screenCastValue" value="true"/>
-    <parameter name="screenCastName" value="{Castle castle.Search"/>
+    <parameter name="url" value="http://www.amazon.com/"/>
+    <parameter name="screenCastValue" value="false"/>
+    <parameter name="screenCastName" value="Castle castle.Search"/>
     <test name = "Castle castle.Search">
     <classes>
 
@@ -30,7 +30,10 @@
         <!--<class name="bestBuy.Freshdirect"/>-->
         <!--<class name="bestBuy.SignIn"/>-->
         <!--<class name="bestBuy.Products"/>-->
-        <class name="amazon.Search"/>
+
+
+        <!--<class name="amazon.Search"/>-->
+        <class name="amazon.Orders"/>
 
     </classes>
 

@@ -8,76 +8,29 @@
     <parameter name="userName" value="DimitarMilevskiPNT"/>
     <parameter name="accessKey" value= "806b9c37-3173-41da-adf3-114ccd386fe4"/>
     <parameter name="os" value="windows"/>
-    <parameter name="browserName" value="firefox"/>
-    <parameter name="browserVersion" value="47.0.1"/>
+    <parameter name="browserName" value="phantomJS"/>
+    <parameter name="browserVersion" value="2.02"/>
+    <!--47.0.1-->
+    <!--2.02-->
     <parameter name="url" value="http://www.bedbathandbeyond.com"/>
     <parameter name="screenCastValue" value="false"/>
     <parameter name="screenCastName" value="BBB"/>
-<!--firefox -48-->
+
     <test name = "Bed Bath And Beyond Search">
         <classes>
-            <class name="search.SearchContent"/>
-        </classes>
-    </test>
-
-    <test name = "Bed Bath And Beyond Gift Card Search">
-        <classes>
-            <class name="giftCardsearch.GiftCard"/>
-        </classes>
-    </test>
-
-    <test name = "BBB Gift Card Add To Card">
-        <classes>
-            <class name="addToCart.giftCardReadFile"/>
-        </classes>
-    </test>
-
-    <test name = "Find Store">
-        <classes>
-            <class name="findAStore.FindStore"/>
-        </classes>
-    </test>
-
-    <test name = "Offers">
-        <classes>
-            <class name="SignUpForOffers.Offers"/>
-        </classes>
-    </test>
-
-    <test name = "Dropdown Menu">
-        <classes>
-            <class name="DropdownBoxElements.Dropdown"/>
-        </classes>
-    </test>
-
-    <test name = "Sign Up E-Mail">
-        <classes>
-            <class name="SignUpForOffers.E_Mail"/>
-        </classes>
-    </test>
-    <test name = "Sign Up Mail">
-        <classes>
-            <class name="SignUpForOffers.Mail"/>
-        </classes>
-    </test>
-    <test name = "Sign Up Mobile">
-        <classes>
-            <class name="SignUpForOffers.Mobile"/>
-        </classes>
-    </test>
-    <test name = "In bestBuy.Products Menu">
-        <classes>
-            <class name="productsMenu.InProducts"/>
-        </classes>
-    </test>
-    <test name = "In bestBuy.Products Get TXT">
-        <classes>
-            <class name="productsMenu.InProductsTxt"/>
-        </classes>
-    </test>
-    <test name = "Read From File">
-        <classes>
-            <class name="readingFromFile.Items"/>
+            <!--<class name="search.SearchContent"/>-->
+            <!--<class name="giftCardsearch.GiftCard"/>-->
+            <!--<class name="addToCart.giftCardReadFile"/>-->
+            <!--<class name="findAStore.FindStore"/>-->
+            <!--<class name="SignUpForOffers.Offers"/>-->
+            <!--<class name="DropdownBoxElements.Dropdown"/>-->
+            <!--<class name="SignUpForOffers.E_Mail"/>-->
+            <!--<class name="SignUpForOffers.Mail"/>-->
+            <!--<class name="SignUpForOffers.Mobile"/>-->
+            <!--<class name="productsMenu.InProducts"/>-->
+            <!--<class name="productsMenu.InProductsTxt"/>-->
+            <!--<class name="readingFromFile.Items"/>-->
+            <class name="HeadlessBrowser.HeadlessBrowser"/>
         </classes>
     </test>
 </suite>

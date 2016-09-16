@@ -2,6 +2,7 @@ package Common;
 
 import atu.testrecorder.ATUTestRecorder;
 import atu.testrecorder.exceptions.ATUTestRecorderException;
+import com.thoughtworks.selenium.webdriven.commands.GetAllLinks;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.BasicConfigurator;
 import org.openqa.selenium.*;
@@ -36,7 +37,9 @@ import java.util.concurrent.TimeUnit;
 public class Base{
     public ATUTestRecorder recorder = null;
 
+
     public WebDriver driver = null;
+
     //    public static Logger logger = LogManager.getLogger(Base.class);
     @Parameters({"useCloudEnv","userName","accessKey","os","browserName","browserVersion","url", "screenCastValue"})
     @BeforeMethod
@@ -59,12 +62,12 @@ public class Base{
         driver.manage().window().maximize();
 
     }
-    public WebDriver getLocalDriver(String osx, String browserName){
+    public WebDriver getLocalDriver(String os, String browserName){
 
         if(browserName.equalsIgnoreCase("firefox")){
             driver = new FirefoxDriver();
         }else if(browserName.equalsIgnoreCase("chrome")){
-            if(osx.equalsIgnoreCase("windows")){
+            if(os.equalsIgnoreCase("windows")){
                 System.setProperty("webdriver.chrome.driver","..\\Generic\\selenium-browser-driver\\chromedriver.exe");
             }else{
                 System.setProperty("webdriver.chrome.driver", "../Generic/selenium-browser-driver/chromedriver");
@@ -77,9 +80,9 @@ public class Base{
             driver = new InternetExplorerDriver();
         }else if(browserName.equalsIgnoreCase("htmlunit")){
             //By passing the TRUE parameter, we are enabling JS capabilities.
-            driver = new HtmlUnitDriver(true);
+            driver = new HtmlUnitDriver();
         }else if(browserName.equalsIgnoreCase("phantomJS")) {
-            if(osx.equalsIgnoreCase("windows")){
+            if(os.equalsIgnoreCase("windows")){
                 System.setProperty("phantomjs.binary.path","..\\Generic\\selenium-browser-driver\\phantomjs.exe" );
             }
             else {
@@ -91,20 +94,6 @@ public class Base{
         return driver;
     }
 
-//    public WebDriver getLocalDriver(String browserName){
-//        if(browserName.equalsIgnoreCase("chrome")){
-//            System.setProperty("webdriver.chrome.driver","Generic\\selenium-browser-driver\\chromedriver.exe");
-//            driver = new ChromeDriver();
-//        }else if(browserName.equalsIgnoreCase("firefox")){
-//            System.setProperty("webdriver.gecko.driver","Generic/selenium-browser-driver/geckodriver");
-//            driver = new FirefoxDriver();
-//        } else if(browserName.equalsIgnoreCase("ie")) {
-//            System.setProperty("webdriver.ie.driver", "Generic/browser-driver/IEDriverServer.exe");
-//            driver = new InternetExplorerDriver();
-//        }
-//        return driver;
-//
-//    }
     public WebDriver getCloudDriver(String userName,String accessKey,String os, String browserName,
                                     String browserVersion)throws IOException {{
 
@@ -117,26 +106,30 @@ public class Base{
         return driver;
     }
     }
-    @Parameters({"screenCastValue", "screenCastName"})
+
+    @Parameters({"screenCastValue", "screenCastName", "useCloudEnv"})
     @BeforeTest
-    public void useScreenCast(@Optional("false") boolean screenCastValue, @Optional ("TC") String screenCastName)throws ATUTestRecorderException {
-        if(screenCastValue==true){
+    public void useScreenCast(@Optional("false") boolean screenCastValue, @Optional ("TC") String screenCastName, @Optional ("false") boolean useCloudEnv) throws ATUTestRecorderException {
+        if(screenCastValue==true && useCloudEnv!=true){
             screenCastStart(screenCastName);
+            System.out.println("ScreenCastStart using BeforeTest: recording started for current Test");
         }
         else {
-            System.out.println("NOt using");
+            //System.out.println("ScreenCast using BeforeTest is Not running for current Tests");
         }
     }
-    @Parameters({"screenCastValue"})
+    @Parameters({"screenCastValue", "useCloudEnv"})
     @AfterTest
-    public void stopScreenCast(@Optional("false") boolean screenCastValue)throws ATUTestRecorderException {
-        if(screenCastValue==true){
+    public void stopScreenCast(@Optional("false") boolean screenCastValue, @Optional("false") boolean useCloudEnv)throws ATUTestRecorderException, NullPointerException {
+        if(screenCastValue==true && screenCastValue==true && useCloudEnv!=true){
             screenCastStop();
+            System.out.println("ScreenCastStop using AfterTest: recording stopped for current Test");
         }
         else {
-            System.out.println("NOt using");
+            //System.out.println("ScreenCastStop using AfterTest is Not running for current Test");
         }
     }
+
     @AfterMethod
     public void cleanUp(){
         try
@@ -306,6 +299,9 @@ public class Base{
     public void iframeHandle(WebElement element){
         driver.switchTo().frame(element);
     }
+    public void iframeHandle2(int fvalue){
+        driver.switchTo().frame(fvalue);
+    }
 
     public void goBackToHomeWindow(){
         driver.switchTo().defaultContent();
@@ -316,12 +312,7 @@ public class Base{
         driver.findElement(By.linkText(locator)).findElement(By.tagName("a")).getText();
     }
 
-    public void iframeHandle2(int fvalue){
-        driver.switchTo().frame(fvalue);
-    }
-    public void iframeHandle2(WebElement element){
-        driver.switchTo().frame(element);
-    }
+
 
     //Taking Screen shots on TestoutputData/Screenshots directory
     public void takeScreenshot(String fileName) throws IOException {
@@ -376,6 +367,40 @@ public class Base{
            path= "C:\\Users\\rrt\\Pictures\\ds1.png";
          */
     }
+    public void getAllLinks(String url){
+        navigateTo(url);
+        List<WebElement> links = driver.findElements(By.tagName("a"));
+        System.out.println(links.size());
+
+        for (int i = 1; i<=links.size()-1; i=i+1)
+
+        { String output=links.get(i).getText();
+            System.out.println(output);
+
+
+        }
+    }
+    public void printVisibleLinks (String ExcelFile) throws InterruptedException {
+        try {
+            List<WebElement> links = driver.findElements(By.tagName("a"));
+            int nooflinks = links.size();
+            int i = 1;
+            //System.out.println(nooflinks);
+            DataRead data = new DataRead(ExcelFile);
+            for (WebElement pagelink : links) {
+               int j = i++;
+                String linktext = pagelink.getText();
+                String link = pagelink.getAttribute("href");
+                if (linktext.length() != 0) {
+                    data.setCellData("Search", "Text", j, linktext);
+                    data.setCellData("Search", "Link", j, link);
+                }
+            }
+        } catch (Exception e) {
+            System.out.println("error " + e);
+        }
+    }
+
     public void clearInput(String locator){
         driver.findElement(By.cssSelector(locator)).clear();
     }
@@ -388,6 +413,7 @@ public class Base{
 
 
     //Global Variables
+
 
 
 

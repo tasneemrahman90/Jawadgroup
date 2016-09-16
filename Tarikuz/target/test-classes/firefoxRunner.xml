@@ -7,6 +7,8 @@
     <parameter name="browserName" value="firefox"/>
     <parameter name="browserVersion" value="47.0"/>
     <parameter name="url" value="https://washingtondc.craigslist.org/"/>
+    <parameter name="screenCastValue" value="false"/>
+    <parameter name="screenCastName" value="Craigslist"/>
 
     <test name = "Craigslist search">
         <classes>

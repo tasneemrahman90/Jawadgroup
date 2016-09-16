@@ -16,7 +16,6 @@ public class HeadlessBrowser extends Base{
         element.sendKeys("Selenium");
         element.submit();
         System.out.println("Page title is "+driver.getTitle());
-        takeScreenshot("Google Search");
-        sleepFor(4);//chaka chak//amazon chudailo kan? figure it out .. i oakm  claling u now
+        sleepFor(4);
     }
 }

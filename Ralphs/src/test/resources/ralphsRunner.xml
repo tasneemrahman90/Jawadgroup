@@ -5,8 +5,8 @@
     <parameter name="userName" value="jawad083"/>
     <parameter name="accessKey" value="9c614a02-865d-4af6-b227-346f89ef0f84"/>
     <parameter name="os" value="mac"/>
-    <parameter name="browserName" value="phantomJs"/>
-    <parameter name="browserVersion" value="2.23"/>
+    <parameter name="browserName" value="firefox"/>
+    <parameter name="browserVersion" value="47.o"/>
     <parameter name="url" value="https://www.ralphs.com/"/>
     <parameter name="screenCastValue" value="false"/>
     <parameter name="screenCastName" value="Ralphs"/>
@@ -19,7 +19,7 @@
             <!--<class name="resetPassword.ResetPass"/>-->
             <!--<class name="storeLocator.LocateStore"/>-->
             <!--<class name="weeklyOffers.WeeklyOffer"/>-->
-            <class name="HeadlessBrowser"/>
+            <!--<class name="HeadlessBrowser"/>-->
 
         </classes>
     </test>

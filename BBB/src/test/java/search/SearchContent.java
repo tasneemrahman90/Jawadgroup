@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
  */
 public class SearchContent extends Base {
 
- //   @Test
+    @Test
     public void SearchContent(){
 
         clickByXpath(".//*[@id='globalSearchForm']/div[1]/a");

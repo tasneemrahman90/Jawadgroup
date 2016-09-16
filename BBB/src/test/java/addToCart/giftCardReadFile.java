@@ -16,16 +16,19 @@ public class giftCardReadFile extends Base {
      @Test
     public void giftCAddToCart() throws InterruptedException, IOException{
 
-     //   clickByXpath(".//*[@id='globalSearchForm']/div[1]/a");
+
          GiftCardTxt gc = PageFactory.initElements(driver, GiftCardTxt.class);
-         gc.clickDropDownMenu();
-         gc.clickSearchForm("GiftCard");
-         gc.clickEGiftCard();
+         gc.clickDropDownMenuXpath();
+         gc.clickDropdownChoice("Gift");
+         gc.clickGiftCard();
+         gc.clickSearchFormNEnter("GiftCard");
          gc.clickSearchButton();
-       // clickByXpath(".//*[@id='globalSearchForm']/div[1]/ul/li[2]/span");
-       // typeByCss("#searchFormInput", "GiftCard");
-        //clickByCss(".searchFormButton");
-       // driver.navigate().to("https://bedbathandbeyond.cashstar.com/");
+         //takeScreenshot("GiftCardScreenshot");
+         scrollPageDown();
+         gc.clickEGiftCard();
+
+         getCurrentPageUrl();
+         driver.navigate().to("https://bedbathandbeyond.cashstar.com/");
 
         GiftCardTxt search = PageFactory.initElements(driver, GiftCardTxt.class);
         GiftCardReadFromFile message = new GiftCardReadFromFile();
@@ -34,29 +37,13 @@ public class giftCardReadFile extends Base {
              search.searchFor(input);
              sleepFor(2);
          }
-
-       // driver.findElement(By.xpath(".//*[@id='message']")).sendKeys(value);
-        clickByXpath(".//*[@id='img_DD48GRTP8']");
-        clickByCss("#amount-250");
-        typeByCss("#name", "Your Name");
-        typeByCss("#email", "MyE-Mail@yahoo.com");
-        typeByCss("#from_name", "My Name");
-        Thread.sleep(30000);
-
-    }
-
-//    public void wishUsingExcelFile() throws IOException, InterruptedException {
-//        //initialize Search page factory
-//        SearchItems search = PageFactory.initElements(driver, SearchItems.class);
-//        //Read search.data from excel file
-//        GiftCardReadFromFile wishes = new GiftCardReadFromFile();
-//        String[] value = wishes.getWish();
-//        for (String read : value) {
-//            search.searchFor(read);
-//            sleepFor(2);
-//            search.clearSearchInput();
-//        }
-//
-//    }
-
+         gc.clickFaceCard();
+         gc.clickCardAmount();
+         gc.clickCardName("Your Name");
+         gc.clickCardEmail("MyE-Mail@yahoo.com");
+         gc.clickCardFromNamel("My Name");
+         gc.clickAddToCard();
+         sleepFor(5);
+        // takeScreenshot("GCAddedToCard");
+     }
 }

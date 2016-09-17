@@ -21,9 +21,9 @@ public class Search  extends AmazonResources {
 
     @Test
     public void test() throws IOException, InterruptedException, ATUTestRecorderException {
-        navigateTo("www.google.com");
+        navigateTo("www.amazon.com");
         printVisibleLinks("data/amazonSearch.xlsx");
-        //getTitleSearch(amazonSearchBox, SuiteExcelFile, SheetName, ReadColumnName, WrColumnName );
+        getTitleSearch(amazonSearchBox, SuiteExcelFile, SheetName, ReadColumnName, WrColumnName );
         //getAllLinks("www.google.com");
 
        // System.out.println();

@@ -121,7 +121,7 @@ public class Base{
     @Parameters({"screenCastValue", "useCloudEnv"})
     @AfterTest
     public void stopScreenCast(@Optional("false") boolean screenCastValue, @Optional("false") boolean useCloudEnv)throws ATUTestRecorderException, NullPointerException {
-        if(screenCastValue==true && screenCastValue==true && useCloudEnv!=true){
+        if(screenCastValue==true  && useCloudEnv!=true){
             screenCastStop();
             System.out.println("ScreenCastStop using AfterTest: recording stopped for current Test");
         }

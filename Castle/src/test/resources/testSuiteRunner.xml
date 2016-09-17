@@ -33,7 +33,8 @@
 
 
         <!--<class name="amazon.Search"/>-->
-        <class name="amazon.Orders"/>
+        <!--<class name="amazon.Orders"/>-->
+        <class name="amazon.AllLinks"/>
 
     </classes>
 

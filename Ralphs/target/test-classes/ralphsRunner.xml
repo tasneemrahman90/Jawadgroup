@@ -18,9 +18,8 @@
             <!--<class name="signIn.SignInUsers"/>-->
             <!--<class name="resetPassword.ResetPass"/>-->
             <!--<class name="storeLocator.LocateStore"/>-->
-            <!--<class name="weeklyOffers.WeeklyOffer"/>-->
+            <class name="weeklyOffers.WeeklyOffer"/>
             <!--<class name="HeadlessBrowser"/>-->
-            <!--<class name="AmazonSignin"/>-->
 
         </classes>
     </test>

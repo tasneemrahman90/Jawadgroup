@@ -1,5 +1,6 @@
 package amazon;
 
+import Common.Base;
 import org.openqa.selenium.support.PageFactory;
 import pageFactory.PageElements;
 import utility.DataRead;
@@ -9,7 +10,7 @@ import java.io.IOException;
 /**
  * Created by PlayBoy on 9/9/16.
  */
-public class AmazonResources extends PageElements {
+public class AmazonResources extends Base {
     String SuiteExcelFile = "data/amazonSearch.xlsx";
 
     String SheetName = "Search";
@@ -28,7 +29,7 @@ public class AmazonResources extends PageElements {
             clearInput(SearchBoxLocator);
             typeByCssNEnter(SearchBoxLocator,dr.getCellData(SheetName, ColumnName,i));
             sleepFor(2);
-            takeScreenshot("AmazonSearch");
+           // takeScreenshot("AmazonSearch");
             dr.setCellData(SheetName,WriteColumnName,i, driver.getTitle());
         }
     }
@@ -46,7 +47,7 @@ public class AmazonResources extends PageElements {
     }
     public void clickOrder(){
         PageElements element = PageFactory.initElements(driver, PageElements.class);
-        hoverMouseToSignIn();
-        waitUntilOrderIsClickableNClick();
+        element.hoverMouseToSignIn();
+        element.waitUntilOrderIsClickableNClick();
     }
 }

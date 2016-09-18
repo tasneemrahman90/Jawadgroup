@@ -1,7 +1,7 @@
 package Common;
 
-import atu.testrecorder.ATUTestRecorder;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
+//import atu.testrecorder.ATUTestRecorder;
+//import atu.testrecorder.exceptions.ATUTestRecorderException;
 import com.thoughtworks.selenium.webdriven.commands.GetAllLinks;
 import org.apache.commons.io.FileUtils;
 import org.apache.log4j.BasicConfigurator;
@@ -35,7 +35,7 @@ import java.util.concurrent.TimeUnit;
  * Created by PlayBoy on 8/30/16.
  */
 public class Base{
-    public ATUTestRecorder recorder = null;
+//    public ATUTestRecorder recorder = null;
 
 
     public WebDriver driver = null;
@@ -45,7 +45,7 @@ public class Base{
     @BeforeMethod
     public void setUp(@Optional("false") boolean useCloudEnv, @Optional("rahmanww") String userName, @Optional("")
             String accessKey, @Optional("Windows 8") String os, @Optional("firefox") String browserName, @Optional("34")
-                              String browserVersion, @Optional("http://www.google.com") String url, @Optional("false") boolean screenCastValue) throws IOException, NullPointerException, ATUTestRecorderException {
+                              String browserVersion, @Optional("http://www.google.com") String url, @Optional("false") boolean screenCastValue) throws IOException, NullPointerException {
         BasicConfigurator.configure();
         if(useCloudEnv==true){
             //run in cloud
@@ -107,30 +107,30 @@ public class Base{
     }
     }
 
-    @Parameters({"screenCastValue", "screenCastName", "useCloudEnv"})
-    @BeforeTest
-    public void useScreenCast(@Optional("false") boolean screenCastValue, @Optional ("TC") String screenCastName,
-                              @Optional ("false") boolean useCloudEnv) throws ATUTestRecorderException {
-        if(screenCastValue==true && useCloudEnv!=true){
-            screenCastStart(screenCastName);
-            System.out.println("ScreenCastStart using BeforeTest: recording started for current Test");
-        }
-        else {
-            System.out.println("ScreenCast using BeforeTest is Not running for current Tests");
-        }
-    }
-    @Parameters({"screenCastValue", "useCloudEnv"})
-    @AfterTest
-    public void stopScreenCast(@Optional("false") boolean screenCastValue, @Optional("false") boolean useCloudEnv)throws
-            ATUTestRecorderException, NullPointerException {
-        if(screenCastValue==true  && useCloudEnv!=true){
-            screenCastStop();
-            System.out.println("ScreenCastStop using AfterTest: recording stopped for current Test");
-        }
-        else {
-            System.out.println("ScreenCastStop using AfterTest is Not running for current Test");
-        }
-    }
+//    @Parameters({"screenCastValue", "screenCastName", "useCloudEnv"})
+//    @BeforeTest
+//    public void useScreenCast(@Optional("false") boolean screenCastValue, @Optional ("TC") String screenCastName,
+//                              @Optional ("false") boolean useCloudEnv) throws ATUTestRecorderException {
+//        if(screenCastValue==true && useCloudEnv!=true){
+//            screenCastStart(screenCastName);
+//            System.out.println("ScreenCastStart using BeforeTest: recording started for current Test");
+//        }
+//        else {
+//            System.out.println("ScreenCast using BeforeTest is Not running for current Tests");
+//        }
+//    }
+//    @Parameters({"screenCastValue", "useCloudEnv"})
+//    @AfterTest
+//    public void stopScreenCast(@Optional("false") boolean screenCastValue, @Optional("false") boolean useCloudEnv)throws
+//            ATUTestRecorderException, NullPointerException {
+//        if(screenCastValue==true  && useCloudEnv!=true){
+//            screenCastStop();
+//            System.out.println("ScreenCastStop using AfterTest: recording stopped for current Test");
+//        }
+//        else {
+//            System.out.println("ScreenCastStop using AfterTest is Not running for current Test");
+//        }
+//    }
 
     @AfterMethod
     public void cleanUp(){
@@ -323,20 +323,20 @@ public class Base{
         Date date = new Date();
         FileUtils.copyFile(scrFile, new File("TestoutputData/Screenshots/" + fileName + "_" + dateFormat.format(date) + ".png"));
     }
-
-    //Taking screen videos
-    public void screenCastStart(String fileName) throws ATUTestRecorderException {
-
-            //run with recorder
-            DateFormat dateFormat = new SimpleDateFormat("yy-mm-dd HH-mm-ss");
-            Date date = new Date();
-            recorder = new ATUTestRecorder("TestOutputData/ScreenCasts/", fileName + "_" + dateFormat.format(date), false);
-            recorder.start();
-    }
-
-    public void screenCastStop() throws ATUTestRecorderException {
-            recorder.stop();
-    }
+//
+//    //Taking screen videos
+//    public void screenCastStart(String fileName) throws ATUTestRecorderException {
+//
+//            //run with recorder
+//            DateFormat dateFormat = new SimpleDateFormat("yy-mm-dd HH-mm-ss");
+//            Date date = new Date();
+//            recorder = new ATUTestRecorder("TestOutputData/ScreenCasts/", fileName + "_" + dateFormat.format(date), false);
+//            recorder.start();
+//    }
+//
+//    public void screenCastStop() throws ATUTestRecorderException {
+//            recorder.stop();
+//    }
 
 
 

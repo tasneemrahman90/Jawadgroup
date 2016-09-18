@@ -1,7 +1,7 @@
 package amazon;
 
 import Common.Base;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
+//import atu.testrecorder.exceptions.ATUTestRecorderException;
 import com.thoughtworks.selenium.webdriven.commands.GetAllLinks;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -20,11 +20,11 @@ import java.util.List;
 public class Search  extends AmazonResources {
 
     @Test
-    public void test() throws Exception{
-       // screenCastStart("Amazon");
+    public void test() throws IOException, InterruptedException {
+
         navigateTo("www.amazon.com");
         getTitleSearch(amazonSearchBox, SuiteExcelFile, SheetName, ReadColumnName, WrColumnName );
-        //screenCastStop();
+
 
     }
 }

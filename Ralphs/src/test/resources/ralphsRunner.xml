@@ -17,8 +17,8 @@
             <!--<class name="searchItems.Search"/>-->
             <!--<class name="signIn.SignInUsers"/>-->
             <!--<class name="resetPassword.ResetPass"/>-->
-            <!--<class name="storeLocator.LocateStore"/>-->
-            <class name="weeklyOffers.WeeklyOffer"/>
+            <class name="storeLocator.LocateStore"/>
+            <!--<class name="weeklyOffers.WeeklyOffer"/>-->
             <!--<class name="HeadlessBrowser"/>-->
 
         </classes>

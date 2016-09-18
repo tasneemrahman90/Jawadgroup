@@ -20,27 +20,10 @@ import java.util.List;
 public class Search  extends AmazonResources {
 
     @Test
-    public void test() throws IOException, InterruptedException, ATUTestRecorderException {
+    public void test() throws Exception{
+       // screenCastStart("Amazon");
         navigateTo("www.amazon.com");
-        printVisibleLinks("data/amazonSearch.xlsx");
         getTitleSearch(amazonSearchBox, SuiteExcelFile, SheetName, ReadColumnName, WrColumnName );
-        //getAllLinks("www.google.com");
-
-       // System.out.println();
-
-//        List<WebElement> links = driver.findElements(By.tagName("a"));
-//        System.out.println(links.size());
-//
-//        for (int i = 1; i<=links.size()-1; i=i+1)
-//
-//        {
-//
-//           // System.out.println(links.get(i).getText());
-//            dataRead.setCellData(SheetName,"AllLinks",i+1,(links.get(i).getText()));
-//
-//        }
-        //dataRead.setCellData(SheetName, "Links", 2, );
-        //getTitleSearch(amazonSearchBox, SuiteExcelFile, SheetName, ReadColumnName, WrColumnName );
         //screenCastStop();
 
     }

@@ -109,24 +109,26 @@ public class Base{
 
     @Parameters({"screenCastValue", "screenCastName", "useCloudEnv"})
     @BeforeTest
-    public void useScreenCast(@Optional("false") boolean screenCastValue, @Optional ("TC") String screenCastName, @Optional ("false") boolean useCloudEnv) throws ATUTestRecorderException {
+    public void useScreenCast(@Optional("false") boolean screenCastValue, @Optional ("TC") String screenCastName,
+                              @Optional ("false") boolean useCloudEnv) throws ATUTestRecorderException {
         if(screenCastValue==true && useCloudEnv!=true){
             screenCastStart(screenCastName);
             System.out.println("ScreenCastStart using BeforeTest: recording started for current Test");
         }
         else {
-            //System.out.println("ScreenCast using BeforeTest is Not running for current Tests");
+            System.out.println("ScreenCast using BeforeTest is Not running for current Tests");
         }
     }
     @Parameters({"screenCastValue", "useCloudEnv"})
     @AfterTest
-    public void stopScreenCast(@Optional("false") boolean screenCastValue, @Optional("false") boolean useCloudEnv)throws ATUTestRecorderException, NullPointerException {
+    public void stopScreenCast(@Optional("false") boolean screenCastValue, @Optional("false") boolean useCloudEnv)throws
+            ATUTestRecorderException, NullPointerException {
         if(screenCastValue==true  && useCloudEnv!=true){
             screenCastStop();
             System.out.println("ScreenCastStop using AfterTest: recording stopped for current Test");
         }
         else {
-            //System.out.println("ScreenCastStop using AfterTest is Not running for current Test");
+            System.out.println("ScreenCastStop using AfterTest is Not running for current Test");
         }
     }
 
@@ -321,8 +323,8 @@ public class Base{
         Date date = new Date();
         FileUtils.copyFile(scrFile, new File("TestoutputData/Screenshots/" + fileName + "_" + dateFormat.format(date) + ".png"));
     }
-    //Taking screen videos
 
+    //Taking screen videos
     public void screenCastStart(String fileName) throws ATUTestRecorderException {
 
             //run with recorder
@@ -367,7 +369,7 @@ public class Base{
            path= "C:\\Users\\rrt\\Pictures\\ds1.png";
          */
     }
-    public void getAllLinks(String url){
+    public void getAllLinks(String url) throws IOException {
         navigateTo(url);
         List<WebElement> links = driver.findElements(By.tagName("a"));
         System.out.println(links.size());

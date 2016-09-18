@@ -7,7 +7,6 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import atu.testrecorder.exceptions.ATUTestRecorderException;
 
 
 
@@ -18,15 +17,11 @@ public class PageElements extends Base {
     @FindBy(how = How.XPATH, using = ".//*[@id='nav_prefetch_yourorders']/span")
     public static WebElement orders;
 
-
-
     @FindBy(how = How.CSS, using = ".a-section .a-box .a-box-inner.a-padding-extra-large .a-row.a-spacing-base #ap_email")
     public static WebElement email;
 
     @FindBy(how = How.CSS, using = "#ap_password")
     public static WebElement pass;
-
-
 
     @FindBy(how = How.CSS, using = "#signInSubmit")
     public static WebElement signInBtn;

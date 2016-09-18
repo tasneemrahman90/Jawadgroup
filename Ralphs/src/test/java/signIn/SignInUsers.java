@@ -17,10 +17,7 @@ public class SignInUsers extends Base{
         users.inputEmail("jfarsin@yahoo.com");
         users.inputPassword("password");
         users.clickSignInAtLoginPage();
-
         sleepFor(5);
-
-
     }
 
 }
